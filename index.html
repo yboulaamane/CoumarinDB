@@ -1,119 +1,65 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta property="og:title" content="CoumarinDB">
-  <meta property="og:description" content="A manually curated database containing chemical information for naturally occurring coumarins.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/thumbnail.png">
-  <meta name="keywords" content="coumarin, database, natural products">
-  <meta name="author" content="Yassir Boulaamane">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/fav.ico" type="image/x-icon">  
-
-
-</head>
- 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KYCT2PSN4Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KYCT2PSN4Q');
-</script>
-  
-</body>
-
-
-  <title>CoumarinDB</title>
-  
-  
-  
-  
-<style>
-table {
-  border-collapse: collapse;
-  border-radius: 5px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  font-family: "Quicksand", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-th {
-  background: #008a19;
-  color: #ffffff;
-  text-align: left;
-}
-
-th,
-td {
-  padding: 10px 20px;
-}
-
-tr:nth-child(even) {
-  background: #eeeeee;
-}
-</style>
-
-  <script>
-  window.console = window.console || function(t) {};
-</script>
-
-  
-  
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
-
+    <meta charset="UTF-8">
+    <meta property="og:title" content="CoumarinDB">
+    <meta property="og:description" content="A manually curated database containing chemical information for naturally occurring coumarins.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/thumbnail.png">
+    <meta name="keywords" content="coumarin, database, natural products">
+    <meta name="author" content="Yassir Boulaamane">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/fav.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
 
 </head>
-
- <title>CoumarinDB</title>
-
- 
-    
-   <img src="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/header.png">
-<p style="font-family:Arial;" "text-align: justify;" font=Arial> Coumarin is considered a versatile and privileged scaffold in medicinal chemistry. In the recent decades, a large number of natural products containing the coumarin scaffold have been isolated and identified from natural resources. The literature shows that coumarin derivatives display a wide spectrum of biological activities such as antibacterial, antioxydant, anticoagulant, antiinflammatory and neuroprotective properties.<br />For this reason, CoumarinDB was created to collect chemical information about naturally occuring coumarins in an effort to cope with the increasing available data and to speed up the drug discovery process from natural products.<br /></p>
-
-<p style="font-family:Arial;""text-align: justify;"><strong>Download:</strong></p>
-
-
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px;"><a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-2D.sdf" target="_blank" style="color: white;">2D-SDF</a></button>  <button style="background-color:#008a19; padding: 12px 24px; font-size: 16px;"><a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-3D.sdf" target="_blank" style="color: white;">3D-SDF</a></button>  <button style="background-color:#008a19; padding: 12px 24px; font-size: 16px;"><a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-SMILES.smi" target="_blank" style="color: white;">SMILES</a></button>
-
-<p style="font-family:Arial;""text-align: justify;"><strong>References:</strong></p>
-<p style="font-family:Arial;""text-align: justify;">Dean, F. M. (1952). Naturally occurring coumarins. Fortschritte der Chemie Organischer Naturstoffe/Progress in the Chemistry of Organic Natural Products/Progr&egrave;s Dans La Chimie Des Substances Organiques Naturelles, 225-291.</p>
-<p style="font-family:Arial;""text-align: justify;">Soine, T. O. (1964). Naturally occurring coumarins and related physiological activities. Journal of pharmaceutical sciences, 53(3), 231-264.</p>
-<p style="font-family:Arial;""text-align: justify;">Murray, R. D. (2002). The naturally occurring coumarins. Fortschritte der Chemie organischer Naturstoffe/Progress in the Chemistry of Organic Natural Products, 1-619.</p>
-<p style="font-family:Arial;""text-align: justify;">Sarker, S. D., &amp; Nahar, L. (2017). Progress in the chemistry of naturally occurring coumarins. Progress in the Chemistry of Organic Natural Products 106, 241-304.</p>
 
 <body translate="no">
-  
-	
-<p style="font-family:Arial;""text-align: justify;"><strong>Component Browser:</strong></p>
-   
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CoumarinDB</title>
-    
-     <div style="overflow-x:auto;">
-        <table id="csvRoot">
+
+    <img src="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/header.png">
+    <p style="font-family:Times New Roman; text-align: justify;" font=Times New Roman> Coumarin is considered a versatile and privileged scaffold in medicinal chemistry. In recent decades, a large number of natural products containing the coumarin scaffold have been isolated and identified from natural resources. The literature shows that coumarin derivatives display a wide spectrum of biological activities such as antibacterial, antioxidant, anticoagulant, anti-inflammatory, and neuroprotective properties.<br />For this reason, CoumarinDB was created to collect chemical information about naturally occurring coumarins to cope with the increasing available data and to speed up the drug discovery process from natural products.<br /></p>
+
+    <p style="font-family:Times New Roman; text-align: justify;"><strong>Download:</strong></p>
+ <!-- Download buttons with updated style -->
+<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
+    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-2D.sdf" target="_blank" style="text-decoration: none; color: white;">2D-SDF</a>
+</button>
+<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
+    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-3D.sdf" target="_blank" style="text-decoration: none; color: white;">3D-SDF</a>
+</button>
+<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
+    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-SMILES.smi" target="_blank" style="text-decoration: none; color: white;">SMILES</a>
+</button>
+
+    <p style="font-family:Times New Roman; text-align: justify;"><strong>Component Browser:</strong></p>
+
+    <div style="overflow-x:auto;">
+        <table id="coumarinTable" class="display">
             <thead>
                 <tr>
-                    <th>Name</th><th>PubChem&nbspID</th><th>CDB ID</th><th>Molecular&nbspFormula</th><th>Smiles</th><th>InChI-Key</th><th>Chemical class</th><th>Natural source</th><th>Total&nbspMolweight</th><th>cLogP</th><th>cLogS</th><th>H-&nbspAcceptors</th><th>H-&nbspDonors</th><th>Rotatable&nbspBonds</th><th>Polar&nbspSurface&nbspArea</th>
+                    <th>Name</th>
+                    <th>PubChem&nbspID</th>
+                    <th>CDB ID</th>
+                    <th>Molecular&nbspFormula</th>
+                    <th>Smiles</th>
+                    <th>InChI-Key</th>
+                    <th>Chemical class</th>
+                    <th>Natural source</th>
+                    <th>Total&nbspMolweight</th>
+                    <th>cLogP</th>
+                    <th>cLogS</th>
+                    <th>H-Acceptors</th>
+                    <th>H-Donors</th>
+                    <th>Rotatable Bonds</th>
+                    <th>Polar Surface Area</th>
                 </tr>
             </thead>
-        
+
             <tbody>
-                
                 <tr>
-                    <td>Coumarin</td><td>323</td><td>CDB0001</td><td>C9H6O2</td><td>C1=CC=C2C(=C1)C=CC(=O)O2</td><td>ZYGHJZDHTFUPRJ-UHFFFAOYSA-N</td><td>Non-Oxygenated Coumarins</td><td>Coumarouna odorata</td><td>146.145</td><td>1.4974</td><td>-2.37</td><td>2</td><td>0</td><td>0</td><td>26.3</td>
+          <td>Coumarin</td><td>323</td><td>CDB0001</td><td>C9H6O2</td><td>C1=CC=C2C(=C1)C=CC(=O)O2</td><td>ZYGHJZDHTFUPRJ-UHFFFAOYSA-N</td><td>Non-Oxygenated Coumarins</td><td>Coumarouna odorata</td><td>146.145</td><td>1.4974</td><td>-2.37</td><td>2</td><td>0</td><td>0</td><td>26.3</td>
                 </tr>
-            
-                <tr>
+ <tr>
                     <td>Trigoforin</td><td>12267346</td><td>CDB0002</td><td>C12H12O2</td><td>CC1=CC2=C(C=C1)C(=C(C(=O)O2)C)C</td><td>KAFSSZHADPCOBG-UHFFFAOYSA-N</td><td>Non-Oxygenated Coumarins</td><td>Trigonella foenumgraecum</td><td>188.225</td><td>2.3597</td><td>-2.567</td><td>2</td><td>0</td><td>0</td><td>26.3</td>
                 </tr>
             
@@ -3728,109 +3674,31 @@ tr:nth-child(even) {
                 <tr>
                     <td>Herpetolide B</td><td>24813535</td><td>CDB0905</td><td>C16H12O6</td><td>COC1=CC(=C2C3=CC(=C(C=C3C(=O)OC2=C1)O)OC)C=O</td><td>HAQBTDDAPNUETN-UHFFFAOYSA-N</td><td>Miscellaneous coumarins</td><td>Herpetospermum caudigerum</td><td>300.265</td><td>2.4371</td><td>-4.15</td><td>6</td><td>1</td><td>3</td><td>82.06</td>
                 </tr>
-            
+
             </tbody>
         </table>
-	</div>
+    </div>
 
-      
-      <script src="https://cdn.jsdelivr.net/npm/papaparse@5.2.0/papaparse.min.js"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
-
-  
-      <script id="rendered-js">
-class TableCsv {
-  /**
-   * @param {HTMLTableElement} root The table element which will display the CSV data.
-   */
-  constructor(root) {
-    this.root = root;
-  }
-
-  /**
-   * Clears existing data in the table and replaces it with new data.
-   *
-   * @param {string[][]} data A 2D array of data to be used as the table body
-   * @param {string[]} headerColumns List of headings to be used
-   */
-  update(data, headerColumns = []) {
-    this.clear();
-    this.setHeader(headerColumns);
-    this.setBody(data);
-  }
-
-  /**
-   * Clears all contents of the table (incl. the header).
-   */
-  clear() {
-    this.root.innerHTML = "";
-  }
-
-  /**
-   * Sets the table header.
-   *
-   * @param {string[]} headerColumns List of headings to be used
-   */
-  setHeader(headerColumns) {
-    this.root.insertAdjacentHTML(
-    "afterbegin",
-    `
-            <thead>
-                <tr>
-                    ${headerColumns.map(text => `<th>${text}</th>`).join("")}
-                </tr>
-            </thead>
-        `);
-
-  }
-
-  /**
-   * Sets the table body.
-   *
-   * @param {string[][]} data A 2D array of data to be used as the table body
-   */
-  setBody(data) {
-    const rowsHtml = data.map(row => {
-      return `
-                <tr>
-                    ${row.map(text => `<td>${text}</td>`).join("")}
-                </tr>
-            `;
-    });
-
-    this.root.insertAdjacentHTML(
-    "beforeend",
-    `
-            <tbody>
-                ${rowsHtml.join("")}
-            </tbody>
-        `);
-
-  }}
-
-
-const tableRoot = document.querySelector("#csvRoot");
-const csvFileInput = document.querySelector("#csvFileInput");
-const tableCsv = new TableCsv(tableRoot);
-
-csvFileInput.addEventListener("change", e => {
-  Papa.parse(csvFileInput.files[0], {
-    delimiter: ",",
-    skipEmptyLines: true,
-    complete: results => {
-      tableCsv.update(results.data.slice(1), results.data[0]);
-    } });
-
-});
-//# sourceURL=pen.js
+    <script>
+        $(document).ready(function () {
+            $('#coumarinTable').DataTable();
+        });
     </script>
 
-  
+</body>
 
+    <p style="font-family:Times New Roman; text-align: justify;"><strong>References:</strong></p>
+    <p style="font-family:Times New Roman; text-align: justify;">Dean, F. M. (1952). Naturally occurring coumarins.
+        Fortschritte der Chemie Organischer Naturstoffe/Progress in the Chemistry of Organic Natural Products/Progr&egrave;s
+        Dans La Chimie Des Substances Organiques Naturelles, 225-291.</p>
+    <p style="font-family:Times New Roman; text-align: justify;">Soine, T. O. (1964). Naturally occurring coumarins and
+        related physiological activities. Journal of pharmaceutical sciences, 53(3), 231-264.</p>
+    <p style="font-family:Times New Roman; text-align: justify;">Murray, R. D. (2002). The naturally occurring coumarins.
+        Fortschritte der Chemie organischer Naturstoffe/Progress in the Chemistry of Organic Natural Products, 1-619.</p>
+    <p style="font-family:Times New Roman; text-align: justify;">Sarker, S. D., &amp; Nahar, L. (2017). Progress in the
+        chemistry of naturally occurring coumarins. Progress in the Chemistry of Organic Natural Products 106, 241-304.</p>
 
-
-
- 
-</body></html>
+</html>
