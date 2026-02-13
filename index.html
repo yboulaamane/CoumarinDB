@@ -12,6 +12,31 @@
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/fav.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
 
+    <style>
+        .download-btn {
+            background-color: #008a19;
+            padding: 12px 24px;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            transition: background-color 0.2s ease, outline 0.1s ease;
+            margin-right: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .download-btn:hover {
+            background-color: #006813;
+        }
+        .download-btn:focus-visible {
+            outline: 3px solid #004d0e;
+            outline-offset: 2px;
+        }
+        .download-container {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body translate="no">
@@ -22,15 +47,11 @@
 
     <p style="font-family:Times New Roman; text-align: justify;"><strong>Download:</strong></p>
  <!-- Download buttons with updated style -->
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-2D.sdf" target="_blank" style="text-decoration: none; color: white;">2D-SDF</a>
-</button>
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-3D.sdf" target="_blank" style="text-decoration: none; color: white;">3D-SDF</a>
-</button>
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-SMILES.smi" target="_blank" style="text-decoration: none; color: white;">SMILES</a>
-</button>
+<div class="download-container">
+    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-2D.sdf" target="_blank" class="download-btn" aria-label="Download 2D SDF file">2D-SDF</a>
+    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-3D.sdf" target="_blank" class="download-btn" aria-label="Download 3D SDF file">3D-SDF</a>
+    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-SMILES.smi" target="_blank" class="download-btn" aria-label="Download SMILES file">SMILES</a>
+</div>
 
     <p style="font-family:Times New Roman; text-align: justify;"><strong>Component Browser:</strong></p>
 
