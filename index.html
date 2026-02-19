@@ -12,25 +12,41 @@
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/fav.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
 
+    <style>
+        .download-btn {
+            background-color: #008a19;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.2s;
+            cursor: pointer;
+        }
+
+        .download-btn:hover,
+        .download-btn:focus {
+            background-color: #006e14;
+            outline: 2px solid #004d0e;
+            outline-offset: 2px;
+            color: white;
+        }
+    </style>
 </head>
 
 <body translate="no">
 
-    <img src="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/header.png">
+    <img src="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/header.png" alt="CoumarinDB Header">
     <p style="font-family:Times New Roman; text-align: justify;" font=Times New Roman> Coumarin is considered a versatile and privileged scaffold in medicinal chemistry. In recent decades, a large number of natural products containing the coumarin scaffold have been isolated and identified from natural resources. The literature shows that coumarin derivatives display a wide spectrum of biological activities such as antibacterial, antioxidant, anticoagulant, anti-inflammatory, and neuroprotective properties.<br />For this reason, CoumarinDB was created to collect chemical information about naturally occurring coumarins to cope with the increasing available data and to speed up the drug discovery process from natural products.<br /></p>
     <p style="font-family:Times New Roman; text-align: justify;" font=Times New Roman> For more information and to cite this database, please refer to the related published article titled "Chemical library design, QSAR modeling and molecular dynamics simulations of naturally occurring coumarins as dual inhibitors of MAO-B and AChE." The research, published in the Journal of Biomolecular Structure and Dynamics, is available at <a href="https://doi.org/10.1080/07391102.2023.2209650">https://doi.org/10.1080/07391102.2023.2209650</a>.</p>
 
     <p style="font-family:Times New Roman; text-align: justify;"><strong>Download:</strong></p>
  <!-- Download buttons with updated style -->
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-2D.sdf" target="_blank" style="text-decoration: none; color: white;">2D-SDF</a>
-</button>
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-3D.sdf" target="_blank" style="text-decoration: none; color: white;">3D-SDF</a>
-</button>
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-SMILES.smi" target="_blank" style="text-decoration: none; color: white;">SMILES</a>
-</button>
+<a href="./coumarinDB-2D.sdf" download aria-label="Download 2D SDF file" class="download-btn">2D-SDF</a>
+<a href="./coumarinDB-3D.sdf" download aria-label="Download 3D SDF file" class="download-btn">3D-SDF</a>
+<a href="./coumarinDB-SMILES.smi" download aria-label="Download SMILES file" class="download-btn">SMILES</a>
 
     <p style="font-family:Times New Roman; text-align: justify;"><strong>Component Browser:</strong></p>
 
