@@ -1,0 +1,3 @@
+## 2024-05-18 - Semantic HTML for buttons and accessible outlines
+**Learning:** The existing download buttons were incorrectly implemented as `<a>` tags nested inside `<button>` tags, which is invalid HTML and causes accessibility issues for screen readers. They also lacked focus states for keyboard navigation and the `target="_blank"` attributes lacked `rel="noopener noreferrer"`.
+**Action:** Replaced the invalid `<button><a>` nesting with semantic `<a>` tags styled as buttons using CSS classes. Added `rel="noopener noreferrer"` for security. Added clear `:focus-visible` styles with appropriate outline contrast for keyboard accessibility.
