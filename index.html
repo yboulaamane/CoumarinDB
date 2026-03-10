@@ -3,39 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>CoumarinDB</title>
     <meta property="og:title" content="CoumarinDB">
     <meta property="og:description" content="A manually curated database containing chemical information for naturally occurring coumarins.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/thumbnail.png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/header.png">
     <meta name="keywords" content="coumarin, database, natural products">
     <meta name="author" content="Yassir Boulaamane">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/fav.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
-
+    <style>
+        .download-btn {
+            display: inline-block;
+            background-color: #008a19;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+        .download-btn:hover, .download-btn:focus-visible {
+            background-color: #006b13;
+            outline: 2px solid #008a19;
+            outline-offset: 2px;
+        }
+        a {
+            color: #008a19;
+        }
+        a:hover, a:focus-visible {
+            color: #006b13;
+        }
+    </style>
 </head>
 
 <body translate="no">
-
-    <img src="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/header.png">
+<main style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <img src="header.png" alt="CoumarinDB Header">
     <p style="font-family:Times New Roman; text-align: justify;" font=Times New Roman> Coumarin is considered a versatile and privileged scaffold in medicinal chemistry. In recent decades, a large number of natural products containing the coumarin scaffold have been isolated and identified from natural resources. The literature shows that coumarin derivatives display a wide spectrum of biological activities such as antibacterial, antioxidant, anticoagulant, anti-inflammatory, and neuroprotective properties.<br />For this reason, CoumarinDB was created to collect chemical information about naturally occurring coumarins to cope with the increasing available data and to speed up the drug discovery process from natural products.<br /></p>
-    <p style="font-family:Times New Roman; text-align: justify;" font=Times New Roman> For more information and to cite this database, please refer to the related published article titled "Chemical library design, QSAR modeling and molecular dynamics simulations of naturally occurring coumarins as dual inhibitors of MAO-B and AChE." The research, published in the Journal of Biomolecular Structure and Dynamics, is available at <a href="https://doi.org/10.1080/07391102.2023.2209650">https://doi.org/10.1080/07391102.2023.2209650</a>.</p>
+    <p style="font-family:Times New Roman; text-align: justify;" font=Times New Roman> For more information and to cite this database, please refer to the related published article titled "Chemical library design, QSAR modeling and molecular dynamics simulations of naturally occurring coumarins as dual inhibitors of MAO-B and AChE." The research, published in the Journal of Biomolecular Structure and Dynamics, is available at <a href="https://doi.org/10.1080/07391102.2023.2209650" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/07391102.2023.2209650</a>.</p>
 
-    <p style="font-family:Times New Roman; text-align: justify;"><strong>Download:</strong></p>
+    <h2 style="font-family:Times New Roman; text-align: justify;">Download</h2>
  <!-- Download buttons with updated style -->
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-2D.sdf" target="_blank" style="text-decoration: none; color: white;">2D-SDF</a>
-</button>
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-3D.sdf" target="_blank" style="text-decoration: none; color: white;">3D-SDF</a>
-</button>
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-SMILES.smi" target="_blank" style="text-decoration: none; color: white;">SMILES</a>
-</button>
+<a href="coumarinDB-2D.sdf" class="download-btn" download aria-label="Download 2D SDF file">2D-SDF</a>
+<a href="coumarinDB-3D.sdf" class="download-btn" download aria-label="Download 3D SDF file">3D-SDF</a>
+<a href="coumarinDB-SMILES.smi" class="download-btn" download aria-label="Download SMILES file">SMILES</a>
 
-    <p style="font-family:Times New Roman; text-align: justify;"><strong>Component Browser:</strong></p>
+    <h2 style="font-family:Times New Roman; text-align: justify;">Component Browser</h2>
 
     <div style="overflow-x:auto;">
-        <table id="coumarinTable" class="display">
+        <table id="coumarinTable" class="display" aria-label="Coumarin Component Browser">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -3689,9 +3708,7 @@
         });
     </script>
 
-</body>
-
-    <p style="font-family:Times New Roman; text-align: justify;"><strong>References:</strong></p>
+    <h2 style="font-family:Times New Roman; text-align: justify;">References</h2>
     <p style="font-family:Times New Roman; text-align: justify;">Dean, F. M. (1952). Naturally occurring coumarins.
         Fortschritte der Chemie Organischer Naturstoffe/Progress in the Chemistry of Organic Natural Products/Progr&egrave;s
         Dans La Chimie Des Substances Organiques Naturelles, 225-291.</p>
@@ -3701,5 +3718,6 @@
         Fortschritte der Chemie organischer Naturstoffe/Progress in the Chemistry of Organic Natural Products, 1-619.</p>
     <p style="font-family:Times New Roman; text-align: justify;">Sarker, S. D., &amp; Nahar, L. (2017). Progress in the
         chemistry of naturally occurring coumarins. Progress in the Chemistry of Organic Natural Products 106, 241-304.</p>
-
+</main>
+</body>
 </html>
