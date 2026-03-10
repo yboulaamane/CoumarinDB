@@ -1,0 +1,3 @@
+## 2024-05-23 - Replaced GitHub raw links with relative links and improved button UX
+**Learning:** External GitHub blob/raw links can cause issues with the `download` attribute because they navigate to another origin. Changing `<button><a>` combinations to semantic `<a>` tags styled as buttons with the `download` attribute and proper ARIA labels improves accessibility and functionality.
+**Action:** When adding or updating download buttons, always use a semantic `<a>` tag with relative paths (if files are hosted together) and `download` attribute to avoid cross-origin download issues and invalid HTML nesting. Use CSS to style links as buttons.
