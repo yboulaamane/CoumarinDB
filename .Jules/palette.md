@@ -1,0 +1,3 @@
+## 2024-05-24 - Semantic Links and Direct Downloads in Static Sites
+**Learning:** For static sites hosted on GitHub Pages (or similar services), using full `github.com/.../blob/main/...` URLs for file downloads opens the GitHub web interface rather than directly downloading the file, leading to poor UX. Furthermore, nesting `<a>` inside `<button>` is invalid HTML and causes accessibility issues.
+**Action:** Use semantic `<a>` tags styled as buttons (with `.download-btn` class including `hover` and `focus-visible` states). Use relative paths to the actual data files combined with the HTML5 `download` attribute to force a direct file download within the same tab, significantly improving the interaction flow.
