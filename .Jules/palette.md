@@ -1,0 +1,3 @@
+## 2024-05-24 - Do not nest links inside buttons for downloads
+**Learning:** Nesting a link inside a button (`<button><a href="...">...</a></button>`) creates invalid HTML and breaks keyboard accessibility. Screen readers and keyboard navigation may be unable to properly focus or activate the underlying link.
+**Action:** Always use semantic `<a>` tags with appropriate CSS styling to look like buttons when the goal is to trigger a file download or navigate to a URL. Furthermore, use relative paths instead of absolute repository URLs with the `download` attribute to ensure files are directly downloaded rather than opened in a browser interface.
