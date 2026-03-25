@@ -1,0 +1,3 @@
+## 2024-05-24 - Semantic download links inside buttons
+**Learning:** Found `<button><a href="..." target="_blank">...</a></button>` construct which completely breaks keyboard accessibility since the browser doesn't know whether to focus the button or the anchor tag, and the button consumes the click without an event handler. It's invalid HTML.
+**Action:** Replace nested interactive elements with a single `<a>` tag and style it to look like a button. When styling `<a>` tags as buttons, add `display: inline-block` and define `hover` and `focus-visible` pseudo-classes to restore interactive feedback that native buttons provide automatically. Also add `rel="noopener noreferrer"` for `target="_blank"` links for security.
