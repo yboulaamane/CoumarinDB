@@ -1,0 +1,5 @@
+## 2024-04-02 - Replacing Invalid Button Links
+
+**Learning:** When using `<button>` elements that wrap `<a>` tags with `href`, it breaks HTML validation and keyboard accessibility (since it nests two interactive elements). A native `<button>` element is not intended to handle navigation or downloads. When replacing these with styled `<a>` tags (using a CSS class) to resolve these accessibility constraints, it's crucial to explicitly add `display: inline-block` and define both `:hover` and `:focus-visible` pseudo-classes to restore the visual interactive feedback native buttons natively provide. Additionally, download links should include the HTML5 `download` attribute and point to the direct relative file rather than an external web viewer, preventing them from opening new tabs unnecessarily.
+
+**Action:** Whenever tasked with fixing link or download buttons, always convert them to semantic `<a>` tags with appropriate styling classes (including `:focus-visible` for keyboard users) rather than nesting `<a>` inside `<button>`. Check and use the `download` attribute and relative paths when pointing to repository files.
