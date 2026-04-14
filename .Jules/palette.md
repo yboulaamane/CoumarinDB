@@ -1,0 +1,3 @@
+## 2024-06-11 - [Replacing Invalid Nested Interactive Elements]
+**Learning:** Nesting `<a>` tags inside `<button>` elements creates invalid HTML and breaks keyboard accessibility, as focus states can become confusing or lost. Furthermore, download buttons that use absolute repository URLs bypass the `download` attribute functionality if cross-origin rules apply (or open new GitHub blob tabs instead of actually downloading).
+**Action:** When creating accessible download links, always use semantic `<a>` tags with `download` attributes and relative paths, and apply CSS classes (`display: inline-block`) with `:hover` and `:focus-visible` pseudo-classes to emulate native button styling and interactive feedback.
