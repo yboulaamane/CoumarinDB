@@ -12,6 +12,27 @@
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/fav.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
 
+    <style>
+        .download-btn {
+            display: inline-block;
+            background-color: #008a19;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            color: white !important;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .download-btn:hover {
+            background-color: #007014;
+            text-decoration: none;
+        }
+        .download-btn:focus-visible {
+            outline: 2px solid #00500e;
+            outline-offset: 2px;
+        }
+    </style>
 </head>
 
 <body translate="no">
@@ -22,15 +43,9 @@
 
     <p style="font-family:Times New Roman; text-align: justify;"><strong>Download:</strong></p>
  <!-- Download buttons with updated style -->
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-2D.sdf" target="_blank" style="text-decoration: none; color: white;">2D-SDF</a>
-</button>
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-3D.sdf" target="_blank" style="text-decoration: none; color: white;">3D-SDF</a>
-</button>
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-SMILES.smi" target="_blank" style="text-decoration: none; color: white;">SMILES</a>
-</button>
+<a href="coumarinDB-2D.sdf" download class="download-btn">2D-SDF</a>
+<a href="coumarinDB-3D.sdf" download class="download-btn">3D-SDF</a>
+<a href="coumarinDB-SMILES.smi" download class="download-btn">SMILES</a>
 
     <p style="font-family:Times New Roman; text-align: justify;"><strong>Component Browser:</strong></p>
 
