@@ -1,0 +1,3 @@
+## 2024-04-20 - [Fixing Download Button Accessibility]
+**Learning:** Found a critical accessibility issue where native `<button>` elements wrapped `<a>` elements for downloading files. This nesting is invalid HTML and breaks keyboard focus and screen reader navigation, as both elements are interactive but only one is semantically correct for navigating/downloading.
+**Action:** Replace nested `<button><a>...</a></button>` structures with styled semantic `<a>` tags (e.g., `<a class="download-btn" href="..." download>...</a>`). Add CSS classes with `:hover`, `:focus-visible`, and `display: inline-block` to replicate native button feel and interaction states while maintaining valid structure.
