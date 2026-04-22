@@ -1,0 +1,3 @@
+## 2024-04-22 - Refactored invalid interactive element nesting
+**Learning:** Found `<a href="...">` elements nested inside native `<button>` tags, creating invalid HTML and breaking keyboard navigation. Using `<a>` elements for navigation is correct, but wrapping them in `<button>` prevents expected behavior.
+**Action:** Replaced the `<button><a>` pairs with semantic `<a class="download-btn">` links. Injected a `<style>` block to define `.download-btn`, using `:hover` and `:focus-visible` pseudo-classes to restore the visual interactive feedback that native buttons usually provide. Also added `rel="noopener noreferrer"` to links opening in new tabs to prevent Reverse Tabnabbing.
