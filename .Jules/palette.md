@@ -1,0 +1,3 @@
+## 2024-04-23 - Accessibility of download buttons
+**Learning:** Native `<button>` elements wrapping `<a>` tags create invalid HTML and keyboard accessibility issues. When replacing them with styled `<a>` tags, it is critical to add `display: inline-block` and define `:hover` and `:focus-visible` pseudo-classes to restore the visual interactive feedback native buttons provide. Adding `rel="noopener noreferrer"` to `target="_blank"` links mitigates reverse tabnabbing vulnerabilities.
+**Action:** Use semantic `<a>` tags with `.download-btn` class instead of nested interactive elements for download links. Ensure the class provides comprehensive states (hover, focus).
