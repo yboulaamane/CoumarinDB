@@ -1,0 +1,3 @@
+## 2024-04-24 - Accessibility and semantic markup for download buttons
+**Learning:** Found a pattern where interactive elements were invalidly nested (`<button>` containing an `<a>`). This creates accessibility problems (keyboard navigation and screen reader confusion) and breaks HTML validity. We had to use an injected `<style>` block for proper pseudo-classes since this project uses raw HTML without a CSS framework.
+**Action:** Replace invalid `<button><a>` patterns with semantic `<a>` tags styled to look like buttons (`display: inline-block`, `padding`, `border-radius`), applying `:hover` and `:focus-visible` pseudo-classes to restore visual interactive feedback and keyboard accessibility, and adding `rel="noopener noreferrer"` for external links.
