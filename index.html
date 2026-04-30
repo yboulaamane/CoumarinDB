@@ -12,6 +12,29 @@
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/fav.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
 
+
+    <style>
+        .download-btn {
+            background-color: #008a19;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+        }
+        .download-btn:hover {
+            background-color: #006e14;
+        }
+        .download-btn:focus-visible {
+            outline: 3px solid #000;
+            outline-offset: 2px;
+        }
+    </style>
 </head>
 
 <body translate="no">
@@ -22,15 +45,9 @@
 
     <p style="font-family:Times New Roman; text-align: justify;"><strong>Download:</strong></p>
  <!-- Download buttons with updated style -->
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-2D.sdf" target="_blank" style="text-decoration: none; color: white;">2D-SDF</a>
-</button>
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-3D.sdf" target="_blank" style="text-decoration: none; color: white;">3D-SDF</a>
-</button>
-<button style="background-color:#008a19; padding: 12px 24px; font-size: 16px; border: none; color: white; cursor: pointer;">
-    <a href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-SMILES.smi" target="_blank" style="text-decoration: none; color: white;">SMILES</a>
-</button>
+<a class="download-btn" href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-2D.sdf" target="_blank" rel="noopener noreferrer">2D-SDF</a>
+<a class="download-btn" href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-3D.sdf" target="_blank" rel="noopener noreferrer">3D-SDF</a>
+<a class="download-btn" href="https://github.com/yboulaamane/CoumarinDB/blob/main/coumarinDB-SMILES.smi" target="_blank" rel="noopener noreferrer">SMILES</a>
 
     <p style="font-family:Times New Roman; text-align: justify;"><strong>Component Browser:</strong></p>
 
@@ -3689,9 +3706,7 @@
         });
     </script>
 
-</body>
-
-    <p style="font-family:Times New Roman; text-align: justify;"><strong>References:</strong></p>
+<p style="font-family:Times New Roman; text-align: justify;"><strong>References:</strong></p>
     <p style="font-family:Times New Roman; text-align: justify;">Dean, F. M. (1952). Naturally occurring coumarins.
         Fortschritte der Chemie Organischer Naturstoffe/Progress in the Chemistry of Organic Natural Products/Progr&egrave;s
         Dans La Chimie Des Substances Organiques Naturelles, 225-291.</p>
@@ -3701,5 +3716,5 @@
         Fortschritte der Chemie organischer Naturstoffe/Progress in the Chemistry of Organic Natural Products, 1-619.</p>
     <p style="font-family:Times New Roman; text-align: justify;">Sarker, S. D., &amp; Nahar, L. (2017). Progress in the
         chemistry of naturally occurring coumarins. Progress in the Chemistry of Organic Natural Products 106, 241-304.</p>
-
+</body>
 </html>
