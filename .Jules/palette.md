@@ -1,0 +1,3 @@
+## 2024-05-02 - Invalid Nested Interactive Elements (`<button><a>`)
+**Learning:** Found nested interactive elements (`<a href>` inside `<button>`) in the CoumarinDB `index.html`. This is invalid HTML and breaks keyboard accessibility and screen reader navigation, as users cannot focus or activate the links reliably. Furthermore, when refactoring to styled `<a>` tags, visual interactive feedback (like `:hover` and `:focus-visible`) was missing without a CSS framework.
+**Action:** Replaced nested structures with semantic `<a>` tags styled as buttons (`display: inline-block`). Explicitly injected a `<style>` block to add `:hover` and `:focus-visible` pseudo-classes to restore the missing visual feedback for keyboard users.
