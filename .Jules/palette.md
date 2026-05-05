@@ -1,0 +1,3 @@
+## 2024-05-05 - Fixing Nested Interactive Elements for Downloads
+**Learning:** In plain HTML pages without a CSS framework, download buttons are frequently implemented as `<button><a>Download</a></button>`. This creates invalid HTML since you cannot nest interactive elements, breaking keyboard navigation and screen reader support. Additionally, using `target="_blank"` without `rel="noopener noreferrer"` introduces reverse tabnabbing security/UX issues.
+**Action:** Always replace `<button><a>` patterns with semantic `<a>` tags formatted as buttons (`display: inline-block`). Be sure to explicitly add `:hover` and `:focus-visible` pseudo-classes to restore the interactive feel native buttons provide, and append `rel="noopener noreferrer"` to external links.
