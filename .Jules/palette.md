@@ -1,0 +1,3 @@
+## 2024-05-24 - Fixed invalid nested links inside buttons
+**Learning:** Found nested interactive elements (`<button><a href="...">...</a></button>`) which is invalid HTML and breaks keyboard accessibility. Users navigating via keyboard could get confused or fail to trigger the link. We should replace them with semantic `<a>` tags styled as buttons, preserving interactivity with `:hover` and `:focus-visible`.
+**Action:** Always check for invalid HTML nesting of interactive elements and use native semantics (e.g. `<a>` for links) with appropriate button styles (`display: inline-block`, `:focus-visible`) instead of wrapping links in buttons.
