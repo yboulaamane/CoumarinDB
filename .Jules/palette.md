@@ -1,0 +1,3 @@
+## 2024-05-11 - Fixing invalid nested interactive elements
+**Learning:** Native HTML buttons should not contain nested `<a>` links. This creates invalid HTML and completely breaks keyboard accessibility and screen reader traversal. Converting them to semantic `<a>` tags with button styling (`display: inline-block`) requires explicitly defining `:hover` and `:focus-visible` pseudo-classes to restore the missing visual interactive feedback that native buttons provide out-of-the-box.
+**Action:** Always scan for and replace `<button><a>...</a></button>` patterns with semantic `<a class="btn">` links, ensuring the CSS class provides appropriate interactive feedback (`hover`, `focus`, `active`) and spacing to match native behavior.
