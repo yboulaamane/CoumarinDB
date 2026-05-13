@@ -1,0 +1,3 @@
+## 2026-05-13 - Nested Interactive Elements (Accessibility Issue)
+**Learning:** Nesting interactive elements, such as `<a>` tags inside `<button>` elements, breaks keyboard accessibility and creates invalid HTML, making it difficult for screen readers and keyboard-only users to navigate interactively.
+**Action:** Replace nested native `<button>` elements wrapping `<a>` tags with semantically correct `<a>` tags styled visually to look like buttons (using CSS classes with properties like `display: inline-block`, `:hover`, and `:focus-visible` to preserve the visual feedback native buttons provide).
