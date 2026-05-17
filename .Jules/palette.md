@@ -1,0 +1,3 @@
+## 2024-05-17 - Button Semantic HTML and Accessibility Enhancement
+**Learning:** Found `<a href>` elements nested inside `<button>` tags. This violates HTML5 semantics and creates ambiguous accessibility patterns where screen readers might announce both elements or trap keyboard focus unexpectedly. The native button visual style is preferred, but the semantic behavior is a link.
+**Action:** Replaced nested `<button><a>...</a></button>` with semantic `<a class="download-btn">...</a>` tags. Added CSS styles directly to the `<a>` tag to mimic button appearance while preserving proper navigation semantics. Included `:hover` and `:focus-visible` pseudo-classes to restore the visual interactive feedback native buttons provide and ensure accessibility.
