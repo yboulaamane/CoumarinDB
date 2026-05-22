@@ -1,0 +1,3 @@
+## 2024-05-22 - Replacing Nested Interactive Elements
+**Learning:** Nesting interactive elements (like an `<a>` inside a `<button>`) creates significant accessibility issues, as screen readers may not be able to interact with the link properly, and the HTML becomes invalid.
+**Action:** When replacing native `<button>` elements with styled `<a>` tags for navigation or downloading, always apply `display: inline-block` and define `:hover` and `:focus-visible` pseudo-classes to restore the visual interactive feedback native buttons provide. Use a class like `.download-btn` with appropriate styling.
