@@ -1,0 +1,3 @@
+## 2024-05-24 - Interactive Elements Nesting (Button > Link)
+**Learning:** Found `<button>` wrapping `<a>` tags in the download section. Nesting interactive elements (like an anchor inside a button) is invalid HTML and causes significant accessibility issues. Screen readers get confused about the role and focus management becomes unpredictable.
+**Action:** Always replace nested `<button><a>` patterns with a single, styled semantic `<a>` tag that provides the necessary interactive states (`:hover`, `:focus-visible`) and `display: inline-block` to mimic the button's visual appearance while maintaining correct semantic meaning and keyboard accessibility.
