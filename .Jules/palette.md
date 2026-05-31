@@ -1,0 +1,3 @@
+## 2024-05-31 - Semantic Download Buttons
+**Learning:** Avoid nesting interactive elements like `<a>` inside `<button>`. It creates confusing tab behavior for keyboard users, is invalid HTML, and screen readers may incorrectly announce it or prevent users from triggering the link. Anchor tags can be styled to look like buttons without losing their semantic "link" meaning.
+**Action:** Always use semantic `<a>` tags with `role="button"` and `aria-label` when the element visually looks like a button but acts as a navigation/download link. Use CSS classes (like `.download-btn`) to handle hover, focus-visible outlines, and layout instead of inline `<button>` wrappers.
