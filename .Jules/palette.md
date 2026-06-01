@@ -1,0 +1,3 @@
+## 2024-06-25 - Avoid Nested Interactive Elements
+**Learning:** Found nested `<a href...>` inside `<button>` elements used for download links. This is a critical accessibility antipattern, as assistive technologies often struggle with nested focusable elements. Using semantic `<a>` tags with `role="button"` and CSS classes is significantly more reliable for both keyboard navigation and screen readers.
+**Action:** Always replace nested interactive elements (`<button>` > `<a>`) with a single semantic anchor tag properly styled to look like a button, and ensure focus-visible states and aria-labels are present.
