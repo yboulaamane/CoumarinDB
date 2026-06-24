@@ -1,0 +1,3 @@
+## 2024-06-24 - Resolving Nested Interactive Elements
+**Learning:** Found nested interactive elements (`<a>` inside `<button>`) used for download links. This is a common anti-pattern that violates HTML5 semantics and creates accessibility barriers for screen readers, which struggle to announce the element's role correctly.
+**Action:** Always use semantic `<a>` tags for navigation or file downloads. To preserve button-like visuals, apply `display: inline-block` alongside padding and background styles directly to the `<a>` element. Enhance accessibility by adding `role="button"` and a descriptive `aria-label`. Avoid journaling routine instances of this fix; document it only if it reveals a broader pattern or constraint.
