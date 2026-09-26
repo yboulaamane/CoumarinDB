@@ -23,9 +23,10 @@ CoumarinDB collects chemical information about naturally occurring coumarins, to
 |---|---|
 | `coumarins.json` | The database. The website reads this file directly. |
 | `coumarinDB-2D.sdf` | 2D structures with all fields as SD properties |
-| `coumarinDB-3D.sdf` | 3D structures with all fields as SD properties |
+| `coumarinDB-3D.sdf` | 3D structures with explicit hydrogens and all fields as SD properties |
 | `coumarinDB-SMILES.smi` | Tab-separated SMILES and CDB ID, with a header line |
 | `index.html`, `assets/` | The website |
+| `scripts/build_downloads.py` | Regenerates the SMILES and SDF files from `coumarins.json` |
 | `scripts/validate.py` | Consistency checks for all of the above |
 
 Each record in `coumarins.json` has these fields, all stored as text:
@@ -55,15 +56,22 @@ If you use CoumarinDB, please cite the related article:
 
 ## Updating the data
 
-1. Edit `coumarins.json`. There is no build step: the website picks up the change on the next page load.
-2. Keep `coumarinDB-SMILES.smi` and both SDF files in step with it: same compounds, same order, same SMILES.
+1. Edit `coumarins.json`. The website picks up the change on the next page load.
+2. Regenerate the download files from it (needs [RDKit](https://www.rdkit.org)):
+
+   ```bash
+   pip install rdkit
+   python3 scripts/build_downloads.py
+   ```
+
+   This rewrites `coumarinDB-SMILES.smi`, the SD properties of `coumarinDB-2D.sdf` (existing 2D coordinates are kept) and all of `coumarinDB-3D.sdf` (RDKit ETKDGv3 embedding with a fixed seed, then MMFF94s optimisation). The output is deterministic, so rerunning it without data changes produces identical files.
 3. Run the checks:
 
    ```bash
    python3 scripts/validate.py
    ```
 
-   Errors (malformed records, files out of step) exit with status 1. Warnings, such as possible duplicates or empty fields, are curation notes and do not fail the run. The same check runs on GitHub for every push and pull request.
+   Errors (malformed records, files out of step, invalid coordinates) exit with status 1. Warnings, such as possible duplicates or empty fields, are curation notes and do not fail the run. With RDKit installed, it also checks every SMILES against its stored InChIKey. The same check runs on GitHub for every push and pull request.
 
 To preview the website locally, serve the folder over HTTP (opening `index.html` straight from disk does not work, because browsers block it from reading `coumarins.json`):
 
