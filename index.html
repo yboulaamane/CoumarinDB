@@ -14,10 +14,14 @@
     <meta property="og:title" content="CoumarinDB">
     <meta property="og:description" content="A manually curated database containing chemical information for naturally occurring coumarins.">
     <meta property="og:url" content="https://yboulaamane.github.io/CoumarinDB/">
-    <meta property="og:image" content="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/header.png">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://yboulaamane.github.io/CoumarinDB/assets/brand/social-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="CoumarinDB logo: the coumarin scaffold drawn on a leaf">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="icon" href="fav.ico" type="image/x-icon">
+    <link rel="icon" href="assets/brand/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="fav.ico" sizes="16x16 32x32 48x48 64x64">
     <link rel="stylesheet" href="assets/style.css">
 
     <!-- Describes the dataset for search engines such as Google Dataset Search. -->
@@ -56,10 +60,15 @@
 
     <header class="site-header">
         <div class="wrap header-inner">
-            <h1 class="brand">
-                <img src="header.png" width="385" height="76"
-                    alt="CoumarinDB: a manually curated database containing chemical information for naturally occurring coumarins">
-            </h1>
+            <div class="brand-block">
+                <h1 class="brand">
+                    <picture>
+                        <source srcset="assets/brand/logo-dark.svg" media="(prefers-color-scheme: dark)">
+                        <img src="assets/brand/logo.svg" width="491" height="120" alt="CoumarinDB">
+                    </picture>
+                </h1>
+                <p class="tagline">A manually curated database containing chemical information for naturally occurring coumarins</p>
+            </div>
             <div class="stats" id="stats" hidden></div>
         </div>
     </header>
