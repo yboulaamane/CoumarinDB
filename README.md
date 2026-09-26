@@ -1,6 +1,11 @@
 # CoumarinDB
 
-![CoumarinDB: a manually curated database containing chemical information for naturally occurring coumarins](header.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yboulaamane/CoumarinDB/main/assets/brand/logo-dark.svg">
+  <img src="assets/brand/logo.svg" alt="CoumarinDB" height="96">
+</picture>
+
+*A manually curated database containing chemical information for naturally occurring coumarins.*
 
 Coumarin is considered a versatile and privileged scaffold in medicinal chemistry. In recent decades, a large number of natural products containing the coumarin scaffold have been isolated and identified from natural resources. The literature shows that coumarin derivatives display a wide spectrum of biological activities such as antibacterial, antioxidant, anticoagulant, anti-inflammatory and neuroprotective properties.
 
@@ -28,6 +33,7 @@ CoumarinDB collects chemical information about naturally occurring coumarins, to
 | `index.html`, `assets/` | The website |
 | `scripts/build_downloads.py` | Regenerates the SMILES and SDF files from `coumarins.json` |
 | `scripts/validate.py` | Consistency checks for all of the above |
+| `assets/brand/` | Logo (light and dark), icon and social preview image |
 
 Each record in `coumarins.json` has these fields, all stored as text:
 
