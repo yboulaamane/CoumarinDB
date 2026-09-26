@@ -148,12 +148,17 @@ h2 {
 }
 
 .brand img {
+    display: block;
+    width: auto;
+    height: 72px;
     max-width: 100%;
-    height: auto;
-    /* The logo has a white background; keep it on white in dark mode too. */
-    background: #fff;
-    border-radius: 8px;
-    padding: 4px 6px;
+}
+
+.tagline {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+    max-width: 52ch;
 }
 
 .stats {
@@ -819,6 +824,10 @@ th[aria-sort="descending"] .sort-arrow::after {
 /* ---------- Small screens ---------- */
 
 @media (max-width: 720px) {
+    .brand img {
+        height: 52px;
+    }
+
     .stats {
         gap: 20px;
     }
