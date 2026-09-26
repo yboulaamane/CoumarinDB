@@ -31,8 +31,8 @@ CoumarinDB collects chemical information about naturally occurring coumarins, to
 | `coumarinDB-3D.sdf` | 3D structures with all fields as SD properties |
 | `coumarinDB-SMILES.smi` | Tab-separated SMILES and CDB ID, with a header line |
 | `index.html`, `assets/` | The website |
-| `assets/brand/` | Logo (light and dark), icon and social preview image |
 | `scripts/validate.py` | Consistency checks for all of the above |
+| `assets/brand/` | Logo (light and dark), icon and social preview image |
 
 Each record in `coumarins.json` has these fields, all stored as text:
 
