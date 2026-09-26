@@ -6,8 +6,10 @@ Run from anywhere:
     python3 scripts/validate.py
 
 coumarins.json is the source of truth: the website reads it directly. This
-script checks that every record is well formed and that the SMILES and SDF
-downloads list the same compounds, in the same order, with the same SMILES.
+script checks that every record is well formed, that the SMILES and SDF
+downloads list the same compounds in the same order, that every SD property
+matches the JSON, and that no structure has invalid or overlapping
+coordinates. scripts/build_downloads.py regenerates the downloads from the JSON.
 
 Errors (broken structure, mismatched files) make the script exit with status 1.
 Warnings are curation notes, such as possible duplicates or empty fields.
@@ -25,6 +27,16 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "coumarins.json"
 SMILES_FILE = ROOT / "coumarinDB-SMILES.smi"
 SDF_FILES = [ROOT / "coumarinDB-2D.sdf", ROOT / "coumarinDB-3D.sdf"]
+
+# SD property name -> JSON field, as written by scripts/build_downloads.py.
+SD_PROPERTIES = {
+    "Name": "name", "PubChem ID": "pubchem_id", "CDB ID": "cdb_id", "Smiles": "smiles",
+    "Chemical class": "chemical_class", "Natural source": "natural_source",
+    "Molecular Formula": "molecular_formula", "InChI-Key": "inchi_key",
+    "Total Molweight": "total_molweight", "cLogP": "clogp", "cLogS": "clogs",
+    "H-Acceptors": "h_acceptors", "H-Donors": "h_donors",
+    "Rotatable Bonds": "rotatable_bonds", "Polar Surface Area": "polar_surface_area",
+}
 
 FIELDS = [
     "name", "pubchem_id", "cdb_id", "molecular_formula", "smiles", "inchi_key",
@@ -153,6 +165,33 @@ def sdf_records(path):
     return [r for r in re.split(r"^\$\$\$\$[ \t]*\r?$\n?", text, flags=re.M) if r.strip()]
 
 
+def sdf_coordinates(record):
+    """Atom coordinate strings of a V2000 or V3000 molblock, or None if unreadable."""
+    lines = record.lstrip("\r\n").splitlines()
+    try:
+        if "V3000" in lines[3]:
+            start = lines.index("M  V30 BEGIN ATOM") + 1
+            end = lines.index("M  V30 END ATOM")
+            return [tuple(line.split()[4:7]) for line in lines[start:end]]
+        n_atoms = int(lines[3][:3])
+        return [tuple(line.split()[:3]) for line in lines[4:4 + n_atoms]]
+    except (IndexError, ValueError):
+        return None
+
+
+def sdf_properties(record):
+    """SD property name -> value (multi-line values joined with newlines)."""
+    _, _, data = record.partition("M  END")
+    props = {}
+    for block in re.split(r"\r?\n\s*\r?\n", data):
+        lines = block.strip("\r\n").splitlines()
+        if lines and lines[0].startswith(">"):
+            m = re.match(r">.*?<([^>]+)>", lines[0])
+            if m:
+                props[m.group(1)] = "\n".join(line.rstrip("\r") for line in lines[1:])
+    return props
+
+
 def check_downloads(rows, ids, errors, warnings):
     by_id = {r.get("cdb_id"): r for r in rows if isinstance(r, dict)}
 
@@ -192,19 +231,63 @@ def check_downloads(rows, ids, errors, warnings):
                 f"({len(titles)} records vs {len(ids)}; first difference at record {first + 1}: "
                 f"found {found}, expected {expected})"
             )
-        broken = []
+        unreadable, nan, overlapping, prop_diffs = [], [], [], []
         for title, rec in zip(titles, records):
-            lines = rec.lstrip("\r\n").splitlines()
-            try:
-                n_atoms = int(lines[3][:3])
-                coords = [line[:30] for line in lines[4:4 + n_atoms]]
-            except (IndexError, ValueError):
-                broken.append(title)
+            coords = sdf_coordinates(rec)
+            if not coords:
+                unreadable.append(title)
                 continue
-            if any("nan" in c.lower() for c in coords):
-                broken.append(title)
-        if broken:
-            warnings.append(f"{path.name}: {len(broken)} records have invalid coordinates (NaN): {listing(broken)}")
+            if any("nan" in value.lower() for xyz in coords for value in xyz):
+                nan.append(title)
+            elif len(set(coords)) < len(coords):
+                overlapping.append(title)
+            row = by_id.get(title)
+            if row:
+                props = sdf_properties(rec)
+                for name, key in SD_PROPERTIES.items():
+                    if props.get(name) != row.get(key):
+                        prop_diffs.append(f"{title} ({name})")
+        if unreadable:
+            errors.append(f"{path.name}: cannot read the atom block of {listing(unreadable)}")
+        if nan:
+            errors.append(f"{path.name}: {len(nan)} records have invalid coordinates (NaN): {listing(nan)}")
+        if overlapping:
+            errors.append(f"{path.name}: atoms share identical coordinates in {listing(overlapping)}")
+        if prop_diffs:
+            errors.append(
+                f"{path.name}: {len(prop_diffs)} SD properties differ from coumarins.json "
+                f"(run scripts/build_downloads.py): {listing(prop_diffs)}"
+            )
+
+
+def check_structures(rows, warnings):
+    """Optional: with RDKit installed, check each SMILES against its stored InChIKey."""
+    try:
+        from rdkit import Chem, RDLogger
+    except ImportError:
+        return False
+    RDLogger.DisableLog("rdApp.*")
+    unparsable, connectivity, stereo = [], [], []
+    for r in rows:
+        mol = Chem.MolFromSmiles(r.get("smiles", ""))
+        if mol is None:
+            unparsable.append(r.get("cdb_id"))
+            continue
+        key = Chem.MolToInchiKey(mol)
+        stored = r.get("inchi_key", "")
+        if key[:14] != stored[:14]:
+            connectivity.append(r.get("cdb_id"))
+        elif key != stored:
+            stereo.append(r.get("cdb_id"))
+    if unparsable:
+        warnings.append(f"RDKit cannot parse the SMILES of {listing(unparsable)}")
+    if connectivity:
+        warnings.append(f"SMILES and InChIKey describe different structures: {listing(connectivity)}")
+    if stereo:
+        warnings.append(
+            f"{len(stereo)} SMILES do not reproduce the stereochemistry in the stored InChIKey: {listing(stereo)}"
+        )
+    return True
 
 
 def main():
@@ -218,8 +301,10 @@ def main():
     ids = check_records(rows, errors, warnings)
     if ids:
         check_downloads(rows, ids, errors, warnings)
+    rdkit = check_structures([r for r in rows if isinstance(r, dict)], warnings)
 
-    print(f"Checked {len(rows)} records in {DATA.name}.")
+    print(f"Checked {len(rows)} records in {DATA.name}."
+          + ("" if rdkit else " (Install RDKit to also check SMILES against InChIKeys.)"))
     for w in warnings:
         print(f"WARNING: {w}")
     for e in errors:

@@ -790,7 +790,7 @@ Ferprenin
 CDB0008
 
 >  <Smiles>
-CC(=CCCC(=CCCC1(C=CC2=C(O1)C3=CC=CC=C3OC2=O)C)C)C
+CC(C)=CCCC(C)=CCC[C@@]1(C)C=CC2=C(O1)C1=CC=CC=C1OC2=O
 
 >  <Chemical class>
 4-Oxygenated Coumarins
@@ -1102,7 +1102,7 @@ Brachycoumarin
 CDB0011
 
 >  <Smiles>
-CC1=C2C(=CC=C1)OC(=O)C(=C2O)C(C)C(=CCC=C(C)C)C
+CC(C)=CCC=C(C)[C@H](C)C1=C(O)C2=C(C)C=CC=C2OC1=O
 
 >  <Chemical class>
 4-Oxygenated Coumarins
@@ -3147,7 +3147,7 @@ Anisocoumarin H
 CDB0031
 
 >  <Smiles>
-CC(=CC(CC(=CCOC1=CC2=C(C=C1)C=CC(=O)O2)C)O)C
+CC(C)=C[C@@H](O)CC(C)=CCOC1=CC2=C(C=CC(=O)O2)C=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -3467,7 +3467,7 @@ Excavatin A
 CDB0034
 
 >  <Smiles>
-CC(=CCOC1=CC2=C(C=C1)C=CC(=O)O2)CC(C=C(C)CO)O
+CC(=C[C@@H](O)CC(C)=CCOC1=CC2=C(C=CC(=O)O2)C=C1)CO
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -3577,7 +3577,7 @@ Marmin
 CDB0035
 
 >  <Smiles>
-CC(=CCOC1=CC2=C(C=C1)C=CC(=O)O2)CCC(C(C)(C)O)O
+CC(=CCOC1=CC2=C(C=CC(=O)O2)C=C1)CC[C@H](O)C(C)(C)O
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -3687,7 +3687,7 @@ Chloromarmin
 CDB0036
 
 >  <Smiles>
-CC(=CCOC1=CC2=C(C=C1)C=CC(=O)O2)CCC(C(C)(C)Cl)O
+CC(=CCOC1=CC2=C(C=CC(=O)O2)C=C1)CC[C@H](O)C(C)(C)Cl
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -3696,7 +3696,7 @@ CC(=CCOC1=CC2=C(C=C1)C=CC(=O)O2)CCC(C(C)(C)Cl)O
 Aegle marmelos
 
 >  <Molecular Formula>
-C19H23O4Cl
+C19H23ClO4
 
 >  <InChI-Key>
 LJKOFXGMGDOURN-KRWDZBQOSA-N
@@ -4608,7 +4608,7 @@ Excavatin E
 CDB0044
 
 >  <Smiles>
-CC(=CCOC1=CC2=C(C=C1)C=CC(=O)O2)CC3C=C(C(=O)O3)CO
+CC(=CCOC1=CC2=C(C=CC(=O)O2)C=C1)C[C@H]1C=C(CO)C(=O)O1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -5175,7 +5175,7 @@ Kokanicin (Cocanicin)
 CDB0049
 
 >  <Smiles>
-CC(=CCCC(=CCCC(C)(C=C)OC1=CC2=C(C=C1)C=CC(=O)O2)C)C
+C=C[C@](C)(CCC=C(C)CCC=C(C)C)OC1=CC2=C(C=CC(=O)O2)C=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -5525,7 +5525,7 @@ Karatavicinol
 CDB0052
 
 >  <Smiles>
-CC(=CCCC(=CCOC1=CC2=C(C=C1)C=CC(=O)O2)C)CCC(C(C)(C)O)O
+CC(=CCOC1=CC2=C(C=CC(=O)O2)C=C1)CCC=C(C)CC[C@H](O)C(C)(C)O
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -11375,7 +11375,7 @@ CC1CCC2(C(C(CCC2C1(C)COC3=CC4=C(C=C3)C=CC(=O)O4)O)C)C
 7-Oxygenated Coumarins
 
 >  <Natural source>
-Ferula microcarpa 
+Ferula microcarpa
 
 >  <Molecular Formula>
 C24H32O4
@@ -12172,7 +12172,7 @@ CC(C)(C=C)OC1C(C(C(C(O1)CO)O)O)O
 7-Oxygenated Coumarins
 
 >  <Natural source>
-Angelica pubescens 
+Angelica pubescens
 
 >  <Molecular Formula>
 C11H20O6
@@ -12448,7 +12448,7 @@ Buntansin B
 CDB0110
 
 >  <Smiles>
-CC(=O)CC(C1=C(C=C2C(=C1)C=CC(=O)O2)OC)O
+COC1=C([C@@H](O)CC(C)=O)C=C2C=CC(=O)OC2=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -12737,7 +12737,7 @@ CC(=C)C=CC1=C(C=C2C(=C1)C=CC(=O)O2)OC
 7-Oxygenated Coumarins
 
 >  <Natural source>
-Citrus grandis 
+Citrus grandis
 
 >  <Molecular Formula>
 C15H14O3
@@ -13124,7 +13124,7 @@ CC(C)CC(=O)C1=C(C=C2C(=C1)C=CC(=O)O2)OC
 7-Oxygenated Coumarins
 
 >  <Natural source>
-Geijera salicifolia 
+Geijera salicifolia
 
 >  <Molecular Formula>
 C15H16O4
@@ -13317,7 +13317,7 @@ Peroxytamarin
 CDB0119
 
 >  <Smiles>
-CC(=C)C(CC1=C(C=C2C(=C1)C=CC(=O)O2)OC)OO
+C=C(C)[C@H](CC1=C(OC)C=C2OC(=O)C=CC2=C1)OO
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -13539,7 +13539,7 @@ Ulopterol (Pubesinol)
 CDB0121
 
 >  <Smiles>
-CC(C)(C(CC1=C(C=C2C(=C1)C=CC(=O)O2)OC)O)O
+COC1=C(C[C@H](O)C(C)(C)O)C=C2C=CC(=O)OC2=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -13880,7 +13880,7 @@ Hopeyhopin
 CDB0124
 
 >  <Smiles>
-CC1(C(O1)C(=O)C2=C(C=C3C(=C2)C=CC(=O)O3)OC)C
+COC1=C(C(=O)[C@H]2OC2(C)C)C=C2C=CC(=O)OC2=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -15324,13 +15324,13 @@ Peucenol (Peumorisin)
 CDB0137
 
 >  <Smiles>
-CC1(CCC(C=C1)(C)C2=C(C=C3C(=C2)C=CC(=O)O3)O)C
+CC1(C)C=C[C@@](C)(C2=C(O)C=C3OC(=O)C=CC3=C2)CC1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
 
 >  <Natural source>
-Peucedanum morisonii 
+Peucedanum morisonii
 
 >  <Molecular Formula>
 C18H20O3
@@ -15586,7 +15586,7 @@ Acrimarine B
 CDB0139
 
 >  <Smiles>
-CC(=CC(C1=C(C=C2C(=C1)C=CC(=O)O2)OC)C3=C(C=C4C(=C3O)C(=O)C5=C(N4)C(=C(C=C5)OC)OC)OC)C
+COC1=C(OC)C2=C(C=C1)C(=O)C1=C(O)C([C@@H](C=C(C)C)C3=C(OC)C=C4OC(=O)C=CC4=C3)=C(OC)C=C1N2
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -15729,7 +15729,7 @@ Acrimarine C
 CDB0140
 
 >  <Smiles>
-CC(=CC(C1=C(C=C2C(=C1)C=CC(=O)O2)OC)C3=C(C=C(C4=C3NC5=C(C4=O)C=CC(=C5OC)O)O)OC)C
+COC1=CC(O)=C2C(=O)C3=C(NC2=C1[C@@H](C=C(C)C)C1=C(OC)C=C2OC(=O)C=CC2=C1)C(OC)=C(O)C=C3
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -15874,7 +15874,7 @@ Acrimarine D
 CDB0141
 
 >  <Smiles>
-CC(=CC(C1=C(C=C2C(=C1)C=CC(=O)O2)OC)C3=C(C=C(C4=C3NC5=C(C4=O)C=CC(=C5OC)OC)O)OC)C
+COC1=CC(O)=C2C(=O)C3=C(NC2=C1[C@@H](C=C(C)C)C1=C(OC)C=C2OC(=O)C=CC2=C1)C(OC)=C(OC)C=C3
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -16017,7 +16017,7 @@ Acrimarine E
 CDB0142
 
 >  <Smiles>
-CC(=CC(C1=C(C=C2C(=C1)C=CC(=O)O2)OC)C3=C(C=C4C(=C3O)C(=O)C5=C(N4)C(=C(C=C5)O)OC)OC)C
+COC1=C([C@H](C=C(C)C)C2=C(OC)C=C3NC4=C(C=CC(O)=C4OC)C(=O)C3=C2O)C=C2C=CC(=O)OC2=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -16162,7 +16162,7 @@ Acrimarine F
 CDB0143
 
 >  <Smiles>
-CC(=CC(C1=C(C=C2C(=C1)C=CC(=O)O2)OC)C3=C(C=C4C(=C3O)C(=O)C5=C(N4C)C(=C(C=C5)O)OC)OC)C
+COC1=C([C@H](C=C(C)C)C2=C(OC)C=C3C(=C2O)C(=O)C2=C(C(OC)=C(O)C=C2)N3C)C=C2C=CC(=O)OC2=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -16303,7 +16303,7 @@ Acrimarine H
 CDB0144
 
 >  <Smiles>
-CC(=CC(C1=C(C=C2C(=C1)C=CC(=O)O2)OC)C3=C(C=C4C(=C3O)C(=O)C5=C(N4C)C(=CC=C5)O)OC)C
+COC1=C([C@H](C=C(C)C)C2=C(OC)C=C3C(=C2O)C(=O)C2=CC=CC(O)=C2N3C)C=C2C=CC(=O)OC2=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -16453,7 +16453,7 @@ Acrimarine I
 CDB0145
 
 >  <Smiles>
-CC(=CC(C1=C(C=C2C(=C1)C=CC(=O)O2)OC)C3=C4C(=C5C(=C3O)C(=O)C6=C(N5C)C(=CC=C6)O)C=CC(O4)(C)C)C
+COC1=C([C@H](C=C(C)C)C2=C3OC(C)(C)C=CC3=C3C(=C2O)C(=O)C2=CC=CC(O)=C2N3C)C=C2C=CC(=O)OC2=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -16607,7 +16607,7 @@ Acrimarine J
 CDB0146
 
 >  <Smiles>
-CC(=CC(C1=C(C=C2C(=C1)C=CC(=O)O2)OC)C3=C4C(=C5C(=C3O)C(=O)C6=C(N5C)C(=C(C=C6)O)OC)C=CC(O4)(C)C)C
+COC1=C([C@H](C=C(C)C)C2=C3OC(C)(C)C=CC3=C3C(=C2O)C(=O)C2=C(C(OC)=C(O)C=C2)N3C)C=C2C=CC(=O)OC2=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -16754,7 +16754,7 @@ Acrimarine N
 CDB0147
 
 >  <Smiles>
-CC(=CC(C1=C(C=C2C(=C1)C=CC(=O)O2)OC)C3=C(C=C4C(=C3O)C(=O)C5=C(N4C)C(=C(C=C5)OC)OC)OC)C
+COC1=C(OC)C2=C(C=C1)C(=O)C1=C(O)C([C@@H](C=C(C)C)C3=C(OC)C=C4OC(=O)C=CC4=C3)=C(OC)C=C1N2C
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -18023,7 +18023,7 @@ Seseliflorin
 CDB0158
 
 >  <Smiles>
-CC(C)(C1CC2=C(O1)C=C3C(=C2)C=CC(=O)O3)OC(=O)C=CSC
+CSC=CC(=O)OC(C)(C)[C@@H]1CC2=C(C=C3OC(=O)C=CC3=C2)O1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -19114,7 +19114,7 @@ Pterybinthinone
 CDB0168
 
 >  <Smiles>
-CC(C)(C1(CC2=C(O1)C=C3C(=C2)C=CC(=O)O3)O)O
+CC(C)(O)[C@]1(O)CC2=C(C=C3OC(=O)C=CC3=C2)O1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -19306,8 +19306,7 @@ C1=CC(=O)OC2=CC3=C(C=CO3)C=C21
 7-Oxygenated Coumarins
 
 >  <Natural source>
-Psoralea corylifolia
-Ficus carica
+Psoralea corylifolia, Ficus carica
 
 >  <Molecular Formula>
 C11H6O3
@@ -19799,7 +19798,7 @@ Agasyllin
 CDB0175
 
 >  <Smiles>
-CC=C(C)C(=O)OC1CC2=CC3=C(C=C2OC1=O)C(C=CO3)(C)C
+CC=C(C)C(=O)O[C@H]1CC2=CC3=C(C=C2OC1=O)C(C)(C)C=CO3
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -20731,7 +20730,7 @@ CC(C(C)(C(=O)OC1C(C(OC2=C1C=C3C=CC(=O)OC3=C2)(C)C)OC(=O)C(C)(C(C)Cl)O)O)Cl
 Peucedanum arenarium
 
 >  <Molecular Formula>
-C24H28O9Cl2
+C24H28Cl2O9
 
 >  <InChI-Key>
 RNLMARCKTLBYFJ-UHFFFAOYSA-N
@@ -22667,7 +22666,7 @@ Isomurralonginol Acetate
 CDB0200
 
 >  <Smiles>
-CC(=C)C(COC(=O)C)C1=C(C=CC2=C1OC(=O)C=C2)OC
+C=C(C)[C@H](COC(C)=O)C1=C(OC)C=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -22779,7 +22778,7 @@ Isomurralonginol Isovalerate
 CDB0201
 
 >  <Smiles>
-CC(C)CC(=O)OCC(C1=C(C=CC2=C1OC(=O)C=C2)OC)C(=C)C
+C=C(C)[C@H](COC(=O)CC(C)C)C1=C(OC)C=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -23532,7 +23531,7 @@ Myrsellin
 CDB0208
 
 >  <Smiles>
-CC(=CCC1=C(C=CC2=C1OC(=O)C=C2)OCC3C(O3)(C)C)C
+CC(C)=CCC1=C(OC[C@@H]2OC2(C)C)C=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -23642,7 +23641,7 @@ Myrsellinol
 CDB0209
 
 >  <Smiles>
-CC(=CCC1=C(C=CC2=C1OC(=O)C=C2)OCC(C(C)(C)O)O)C
+CC(C)=CCC1=C(OC[C@H](O)C(C)(C)O)C=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -23953,7 +23952,7 @@ Auraptenol
 CDB0212
 
 >  <Smiles>
-CC(=C)C(CC1=C(C=CC2=C1OC(=O)C=C2)OC)O
+C=C(C)[C@@H](O)CC1=C(OC)C=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -24249,7 +24248,7 @@ Meranzin (Aurapten)
 CDB0215
 
 >  <Smiles>
-CC1(C(O1)CC2=C(C=CC3=C2OC(=O)C=C3)OC)C
+COC1=C(C[C@@H]2OC2(C)C)C2=C(C=CC(=O)O2)C=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -24768,7 +24767,7 @@ Isoponcimarin
 CDB0220
 
 >  <Smiles>
-CC(C)C(=O)CC1=C(C=CC2=C1OC(=O)C=C2)OCC3C(O3)(C)C
+CC(C)C(=O)CC1=C(OC[C@@H]2OC2(C)C)C=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -24880,7 +24879,7 @@ Triphasiol
 CDB0221
 
 >  <Smiles>
-CC(C)C(=O)CC1=C(C=CC2=C1OC(=O)C=C2)OCC(C(C)(C)O)O
+CC(C)C(=O)CC1=C(OC[C@H](O)C(C)(C)O)C=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -25588,7 +25587,7 @@ CC(=C)C(C(C1=C(C=CC2=C1OC(=O)C=C2)OC)Cl)O
 Murraya panicuiata
 
 >  <Molecular Formula>
-C15H15O4Cl
+C15H15ClO4
 
 >  <InChI-Key>
 HROGOCUMIJWOHN-UHFFFAOYSA-N
@@ -25813,7 +25812,7 @@ Murrayatin
 CDB0230
 
 >  <Smiles>
-CC(C)CC(=O)OC(CC1=C(C=CC2=C1OC(=O)C=C2)OC)C(C)(C)O
+COC1=C(C[C@H](OC(=O)CC(C)C)C(C)(C)O)C2=C(C=CC(=O)O2)C=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -25922,7 +25921,7 @@ Pranferin
 CDB0231
 
 >  <Smiles>
-COc1ccc2ccc(=O)oc2c1CC1OC(C)(C)OC1(C)C
+COC1=C(C[C@@H]2OC(C)(C)OC2(C)C)C2=C(C=CC(=O)O2)C=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -26028,7 +26027,7 @@ Yuehgesin-C
 CDB0232
 
 >  <Smiles>
-CCOC(C)(C)C(CC1=C(C=CC2=C1OC(=O)C=C2)OC)O
+CCOC(C)(C)[C@@H](O)CC1=C(OC)C=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -26138,7 +26137,7 @@ Ferudiol
 CDB0233
 
 >  <Smiles>
-CC(=CC(=O)C(CC1=C(C=CC2=C1OC(=O)C=C2)O)C(C)(C)O)C
+CC(C)=CC(=O)[C@@H](CC1=C(O)C=CC2=C1OC(=O)C=C2)C(C)(C)O
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -26240,7 +26239,7 @@ Casegravol
 CDB0234
 
 >  <Smiles>
-CC(CO)(C=CC1=C(C=CC2=C1OC(=O)C=C2)OC)O
+COC1=C(C=C[C@@](C)(O)CO)C2=C(C=CC(=O)O2)C=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -26382,7 +26381,7 @@ Dioxinoacrimarine-A
 CDB0235
 
 >  <Smiles>
-CC1(COC2=C(O1)C=CC3=C2N(C4=C(C3=O)C(=CC(=C4)OC)O)C)C=CC5=C(C=CC6=C5OC(=O)C=C6)O
+COC1=CC(O)=C2C(=O)C3=C(C4=C(C=C3)O[C@](C)(C=CC3=C(O)C=CC5=C3OC(=O)C=C5)CO4)N(C)C2=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -26496,7 +26495,7 @@ Murpaniculol
 CDB0236
 
 >  <Smiles>
-CC(C)C(=O)C(C1=C(C=CC2=C1OC(=O)C=C2)OC)OC(=O)C=C(C)C
+COC1=C([C@@H](OC(=O)C=C(C)C)C(=O)C(C)C)C2=C(C=CC(=O)O2)C=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -26604,7 +26603,7 @@ Hainanmurpanin
 CDB0237
 
 >  <Smiles>
-CC(C)C(=O)C(C1=C(C=CC2=C1OC(=O)C=C2)OC)OC(=O)C
+COC1=C([C@@H](OC(C)=O)C(=O)C(C)C)C2=C(C=CC(=O)O2)C=C1
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -30497,8 +30496,7 @@ CC1(C(CC2=C(O1)C=CC3=C2OC(=O)C=C3)O)C
 7-Oxygenated Coumarins
 
 >  <Natural source>
-Lomatium nuttallii
-Libanotis buchtormensis
+Lomatium nuttallii, Libanotis buchtormensis
 
 >  <Molecular Formula>
 C14H14O4
@@ -32216,8 +32214,7 @@ CC=C(C)C(=O)OC1C(C2=C(C=CC3=C2OC(=O)C=C3)OC1(C)C)OC(=O)C(C)C
 7-Oxygenated Coumarins
 
 >  <Natural source>
-Musineon divaricatum
-Angelica furcijuga
+Musineon divaricatum, Angelica furcijuga
 
 >  <Molecular Formula>
 C23H26O7
@@ -36617,9 +36614,7 @@ CC1(C=CC2=C(O1)C=CC3=C2OC(=O)C=C3)C
 7-Oxygenated Coumarins
 
 >  <Natural source>
-Amyris balsamifera
-Skimmia repens
-Seseli indicum
+Amyris balsamifera, Skimmia repens, Seseli indicum
 
 >  <Molecular Formula>
 C14H12O3
@@ -36921,7 +36916,7 @@ Swietenocoumarin I
 CDB0327
 
 >  <Smiles>
-CC(C)(C=C)C1=CC2=CC(=C(C=C2OC1=O)OC)CC(C(C)(C)O)O
+C=CC(C)(C)C1=CC2=C(C=C(OC)C(C[C@H](O)C(C)(C)O)=C2)OC1=O
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -37143,8 +37138,7 @@ CC(C)(C=C)C1=CC2=CC3=C(C=C2OC1=O)OC(C3)C(C)(C)O
 7-Oxygenated Coumarins
 
 >  <Natural source>
-Ruta chalepensis
-Ruta graveolens
+Ruta chalepensis, Ruta graveolens
 
 >  <Molecular Formula>
 C19H22O4
@@ -37259,8 +37253,7 @@ CC(=O)OC(C)(C)C1CC2=C(O1)C=C3C(=C2)C=C(C(=O)O3)C(C)(C)C=C
 7-Oxygenated Coumarins
 
 >  <Natural source>
-Ruta chalepensis
-Ruta graveolens
+Ruta chalepensis, Ruta graveolens
 
 >  <Molecular Formula>
 C21H24O5
@@ -37358,8 +37351,7 @@ CC(C)(C=C)C1=CC2=C(C=C3C(=C2)C=CO3)OC1=O
 7-Oxygenated Coumarins
 
 >  <Natural source>
-Ruta chalepensis
-Chloroxylon swietenia
+Ruta chalepensis, Chloroxylon swietenia
 
 >  <Molecular Formula>
 C16H14O3
@@ -37455,14 +37447,13 @@ Clausindine (Rutolide)
 CDB0332
 
 >  <Smiles>
-CC1(CC1C2=CC3=C(C=C4C(=C3)C=CO4)OC2=O)C
+CC1(C)C[C@@H]1C1=CC2=C(C=C3OC=CC3=C2)OC1=O
 
 >  <Chemical class>
 7-Oxygenated Coumarins
 
 >  <Natural source>
-Ruta montana
-Clausena indica
+Ruta montana, Clausena indica
 
 >  <Molecular Formula>
 C16H14O3
@@ -38638,7 +38629,7 @@ Swietenocoumarin C
 CDB0343
 
 >  <Smiles>
-CC1(C(O1)CC2=C3C(=CC4=C2OC=C4)C=CC(=O)O3)C
+CC1(C)O[C@H]1CC1=C2OC=CC2=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -38743,7 +38734,7 @@ Swietenocoumarin E
 CDB0344
 
 >  <Smiles>
-CC(C)(C(CC1=C2C(=CC3=C1OC=C3)C=CC(=O)O2)O)O
+CC(C)(O)[C@@H](O)CC1=C2OC=CC2=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7-Oxygenated Coumarins
@@ -40429,7 +40420,7 @@ Mirificoumestan Glycol
 CDB0359
 
 >  <Smiles>
-CC(C)(C(CC1=C(C(=CC2=C1C3=C(O2)C4=C(C=C(C=C4)O)OC3=O)O)OC)O)O
+COC1=C(O)C=C2OC3=C(C(=O)OC4=C3C=CC(O)=C4)C2=C1C[C@H](O)C(C)(C)O
 
 >  <Chemical class>
 4,7-Dioxygenated Coumarins
@@ -41270,7 +41261,7 @@ Psoralidin Oxide
 CDB0367
 
 >  <Smiles>
-CC1(C(O1)CC2=CC3=C(C=C2O)OC(=O)C4=C3OC5=C4C=CC(=C5)O)C
+CC1(C)O[C@H]1CC1=C(O)C=C2OC(=O)C3=C(OC4=C3C=CC(O)=C4)C2=C1
 
 >  <Chemical class>
 4,7-Dioxygenated Coumarins
@@ -42921,7 +42912,7 @@ Toddanol
 CDB0382
 
 >  <Smiles>
-CC(=C)C(CC1=C(C=C2C(=C1OC)C=CC(=O)O2)OC)O
+C=C(C)[C@@H](O)CC1=C(OC)C=C2OC(=O)C=CC2=C1OC
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -43026,7 +43017,7 @@ Aculeatin
 CDB0383
 
 >  <Smiles>
-CC1(C(O1)CC2=C(C=C3C(=C2OC)C=CC(=O)O3)OC)C
+COC1=C(C[C@@H]2OC2(C)C)C(OC)=C2C=CC(=O)OC2=C1
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -43130,7 +43121,7 @@ Toddanone
 CDB0384
 
 >  <Smiles>
-CC(=C)C(CC1=C(C=C2C(=C1OC)C=CC(=O)O2)OC)O
+C=C(C)[C@@H](O)CC1=C(OC)C=C2OC(=O)C=CC2=C1OC
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -43236,7 +43227,7 @@ Toddalolactone
 CDB0385
 
 >  <Smiles>
-CC(C)(C(CC1=C(C=C2C(=C1OC)C=CC(=O)O2)OC)O)O
+COC1=C(C[C@H](O)C(C)(C)O)C(OC)=C2C=CC(=O)OC2=C1
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -43845,7 +43836,7 @@ Pranferol
 CDB0391
 
 >  <Smiles>
-CC(C)C(COC1=C2C=CC(=O)OC2=CC3=C1C=CO3)O
+CC(C)[C@@H](O)COC1=C2C=COC2=CC2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -43950,7 +43941,7 @@ Pabulenol
 CDB0392
 
 >  <Smiles>
-CC(=C)C(COC1=C2C=CC(=O)OC2=CC3=C1C=CO3)O
+C=C(C)[C@@H](O)COC1=C2C=COC2=CC2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -44055,7 +44046,7 @@ Gosferol
 CDB0393
 
 >  <Smiles>
-CC(=C)C(COC1=C2C=CC(=O)OC2=CC3=C1C=CO3)O
+C=C(C)[C@@H](O)COC1=C2C=COC2=CC2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -44161,7 +44152,7 @@ Prangolarine (( + )-Oxypeucedanin)
 CDB0394
 
 >  <Smiles>
-CC1(C(O1)COC2=C3C=CC(=O)OC3=CC4=C2C=CO4)C
+CC1(C)O[C@H]1COC1=C2C=COC2=CC2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -44370,14 +44361,13 @@ M  END
 CDB0396
 
 >  <Smiles>
-CC(C)(C(COC1=C2C=CC(=O)OC2=CC3=C1C=CO3)O)O
+CC(C)(O)[C@@H](O)COC1=C2C=COC2=CC2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
 
 >  <Natural source>
-Angelica gmelini
-Peucedanum palustre
+Angelica gmelini, Peucedanum palustre
 
 >  <Molecular Formula>
 C16H16O6
@@ -44480,7 +44470,7 @@ M  END
 CDB0397
 
 >  <Smiles>
-CC(C)(C(COC1=C2C=CC(=O)OC2=CC3=C1C=CO3)O)OC
+COC(C)(C)[C@@H](O)COC1=C2C=COC2=CC2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -44599,7 +44589,7 @@ Ostruthol
 CDB0398
 
 >  <Smiles>
-CC=C(C)C(=O)OC(COC1=C2C=CC(=O)OC2=CC3=C1C=CO3)C(C)(C)O
+CC=C(C)C(=O)O[C@@H](COC1=C2C=COC2=CC2=C1C=CC(=O)O2)C(C)(C)O
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -44986,7 +44976,7 @@ Saxalin
 CDB0401
 
 >  <Smiles>
-CC(C)(C(COC1=C2C=CC(=O)OC2=CC3=C1C=CO3)O)Cl
+CC(C)(Cl)[C@@H](O)COC1=C2C=COC2=CC2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -44995,7 +44985,7 @@ CC(C)(C(COC1=C2C=CC(=O)OC2=CC3=C1C=CO3)O)Cl
 Angelica saxatilis
 
 >  <Molecular Formula>
-C16H15O5Cl
+C16H15ClO5
 
 >  <InChI-Key>
 QPHPWCUVCZXUEP-ZDUSSCGKSA-N
@@ -45433,7 +45423,7 @@ Notopterol
 CDB0405
 
 >  <Smiles>
-CC(=CC(CC(=CCOC1=C2C=CC(=O)OC2=CC3=C1C=CO3)C)O)C
+CC(C)=C[C@@H](O)CC(C)=CCOC1=C2C=COC2=CC2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -45552,7 +45542,7 @@ Ethylnotopterol
 CDB0406
 
 >  <Smiles>
-CCOC(CC(=CCOC1=C2C=CC(=O)OC2=CC3=C1C=CO3)C)C=C(C)C
+CCO[C@H](C=C(C)C)CC(C)=CCOC1=C2C=COC2=CC2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -45789,7 +45779,7 @@ Notoptolide
 CDB0408
 
 >  <Smiles>
-CCOC(C)OC(C)(C)C=CCC(=CCOC1=C2C=CC(=O)OC2=CC3=C1C=CO3)C
+CCO[C@H](C)OC(C)(C)C=CCC(C)=CCOC1=C2C=COC2=CC2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -46831,7 +46821,7 @@ Protobruceol-I
 CDB0418
 
 >  <Smiles>
-CC(=CCCC1(C=CC2=C(O1)C3=C(C=C2O)OC(=O)C=C3)C)C
+CC(C)=CCC[C@@]1(C)C=CC2=C(O)C=C3OC(=O)C=CC3=C2O1
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -47747,7 +47737,7 @@ Omphamurin
 CDB0427
 
 >  <Smiles>
-CC(=C)C(CC1=C(C=C(C2=C1OC(=O)C=C2)OC)OC)O
+C=C(C)[C@@H](O)CC1=C2OC(=O)C=CC2=C(OC)C=C1OC
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -47852,7 +47842,7 @@ M  END
 CDB0428
 
 >  <Smiles>
-CC1(C(O1)CC2=C(C=C(C3=C2OC(=O)C=C3)OC)OC)C
+COC1=CC(OC)=C2C=CC(=O)OC2=C1C[C@@H]1OC1(C)C
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -47965,7 +47955,7 @@ Sesebrin
 CDB0429
 
 >  <Smiles>
-CC(=CCOC1=CC(=C(C2=C1C=CC(=O)O2)CC3C(O3)(C)C)OC)C
+COC1=CC(OCC=C(C)C)=C2C=CC(=O)OC2=C1C[C@@H]1OC1(C)C
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -48072,8 +48062,7 @@ CC(=CC(=O)C1=C(C=C(C2=C1OC(=O)C=C2)OC)OC)C
 5,7-Dioxygenated Coumarins
 
 >  <Natural source>
-Angelica glabra
-Angelica ursina
+Angelica glabra, Angelica ursina
 
 >  <Molecular Formula>
 C16H16O5
@@ -48274,7 +48263,7 @@ Mexoticin
 CDB0432
 
 >  <Smiles>
-CC(C)(C(CC1=C(C=C(C2=C1OC(=O)C=C2)OC)OC)O)O
+COC1=CC(OC)=C2C=CC(=O)OC2=C1C[C@H](O)C(C)(C)O
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -48380,7 +48369,7 @@ M  END
 CDB0433
 
 >  <Smiles>
-CC(C)(C(CC1=C(C=C(C2=C1OC(=O)C=C2)OC)OC)O)O
+COC1=CC(OC)=C2C=CC(=O)OC2=C1C[C@H](O)C(C)(C)O
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -48599,7 +48588,7 @@ Sesebrinol
 CDB0435
 
 >  <Smiles>
-CC(=CCOC1=CC(=C(C2=C1C=CC(=O)O2)CC(C(C)(C)O)O)OC)C
+COC1=CC(OCC=C(C)C)=C2C=CC(=O)OC2=C1C[C@H](O)C(C)(C)O
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -50026,7 +50015,7 @@ Neoacrimarine-D
 CDB0448
 
 >  <Smiles>
-CC1(CC(C2=C(O1)C(=C3C(=C2O)C=CC(=O)O3)C(C)(C)C=C)C4=C5C(=C6C(=C4O)C(=O)C7=C(N6C)C(=CC=C7)O)C=CC(O5)(C)C)C
+C=CC(C)(C)C1=C2OC(=O)C=CC2=C(O)C2=C1OC(C)(C)C[C@@H]2C1=C2OC(C)(C)C=CC2=C2C(=C1O)C(=O)C1=CC=CC(O)=C1N2C
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -50182,7 +50171,7 @@ Neoacrimarine-E
 CDB0449
 
 >  <Smiles>
-CC1(CC(C2=C(O1)C(=C3C(=C2O)C=CC(=O)O3)C(C)(C)C=C)C4=C(C=C(C5=C4NC6=C(C5=O)C=CC(=C6OC)OC)O)OC)C
+C=CC(C)(C)C1=C2OC(=O)C=CC2=C(O)C2=C1OC(C)(C)C[C@H]2C1=C2NC3=C(C=CC(OC)=C3OC)C(=O)C2=C(O)C=C1OC
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -50402,8 +50391,7 @@ CC1(C=CC2=C(C3=C(C(=C2O1)C(C)(C)C=C)OC(=O)C=C3)OC)C
 5,7-Dioxygenated Coumarins
 
 >  <Natural source>
-Clausena dentata
-Poncirus trifohata
+Clausena dentata, Poncirus trifohata
 
 >  <Molecular Formula>
 C20H22O4
@@ -50625,7 +50613,7 @@ Oxanordentatin
 CDB0453
 
 >  <Smiles>
-CC1(C=CC2=C(O1)C3=C(C(=C2O)C(C)(C)C4CO4)OC(=O)C=C3)C
+CC1(C)C=CC2=C(O)C(C(C)(C)[C@@H]3CO3)=C3OC(=O)C=CC3=C2O1
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -53227,7 +53215,7 @@ Neoacrimarine-B
 CDB0476
 
 >  <Smiles>
-CC1(CC(C2=C(O1)C(=C3C(=C2O)C=C(C(=O)O3)C(C)(C)C=C)C(C)(C)C=C)C4=C(C=C(C5=C4NC6=C(C5=O)C=CC(=C6OC)O)O)OC)C
+C=CC(C)(C)C1=CC2=C(O)C3=C(OC(C)(C)C[C@H]3C3=C4NC5=C(C=CC(O)=C5OC)C(=O)C4=C(O)C=C3OC)C(C(C)(C)C=C)=C2OC1=O
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -53393,7 +53381,7 @@ Neoacrimarine-A
 CDB0477
 
 >  <Smiles>
-CC1(CC(C2=C(O1)C(=C3C(=C2O)C=C(C(=O)O3)C(C)(C)C=C)C(C)(C)C=C)C4=C(C=C(C5=C4NC6=C(C5=O)C=CC(=C6OC)OC)O)OC)C
+C=CC(C)(C)C1=CC2=C(O)C3=C(OC(C)(C)C[C@H]3C3=C4NC5=C(C=CC(OC)=C5OC)C(=O)C4=C(O)C=C3OC)C(C(C)(C)C=C)=C2OC1=O
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -53515,7 +53503,7 @@ Oxaclausarin
 CDB0478
 
 >  <Smiles>
-CC1(C=CC2=C(O1)C(=C3C(=C2O)C=C(C(=O)O3)C(C)(C)C=C)C(C)(C)C4CO4)C
+C=CC(C)(C)C1=CC2=C(O)C3=C(OC(C)(C)C=C3)C(C(C)(C)[C@@H]3CO3)=C2OC1=O
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -53840,7 +53828,7 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <Name>
-Cordatolide  B
+Cordatolide B
 
 >  <PubChem ID>
 469581
@@ -53951,7 +53939,7 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <Name>
-Cordatolide  A
+Cordatolide A
 
 >  <PubChem ID>
 126938
@@ -54062,7 +54050,7 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <Name>
-Mammea  B/Ac
+Mammea B/Ac
 
 >  <PubChem ID>
 44546134
@@ -54178,7 +54166,7 @@ M  V30 END COLLECTION
 M  V30 END CTAB
 M  END
 >  <Name>
-Mammea  B/ Ab (Mab  2)
+Mammea B/ Ab (Mab 2)
 
 >  <PubChem ID>
 71436830
@@ -54187,7 +54175,7 @@ Mammea  B/ Ab (Mab  2)
 CDB0484
 
 >  <Smiles>
-CCCC1=CC(=O)OC2=C1C(=C(C(=C2CC=C(C)C)O)C(=O)C(C)CC)O
+CCCC1=CC(=O)OC2=C(CC=C(C)C)C(O)=C(C(=O)[C@@H](C)CC)C(O)=C12
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -54289,7 +54277,7 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <Name>
-Mammea  B/Bd
+Mammea B/Bd
 
 >  <PubChem ID>
 102383790
@@ -54304,8 +54292,7 @@ CCCC1=CC(=O)OC2=C1C(=C(C(=C2C(=O)C(C)C)O)CC=C(C)C)O
 5,7-Dioxygenated Coumarins
 
 >  <Natural source>
-Mammea americana
-Mammea africana
+Mammea americana, Mammea africana
 
 >  <Molecular Formula>
 C21H26O5
@@ -54517,7 +54504,7 @@ M  V30 END COLLECTION
 M  V30 END CTAB
 M  END
 >  <Name>
-Mammea  B/Bb
+Mammea B/Bb
 
 >  <PubChem ID>
 53320112
@@ -54526,7 +54513,7 @@ Mammea  B/Bb
 CDB0487
 
 >  <Smiles>
-CCCC1=CC(=O)OC2=C1C(=C(C(=C2C(=O)C(C)CC)O)CC=C(C)C)O
+CCCC1=CC(=O)OC2=C(C(=O)[C@@H](C)CC)C(O)=C(CC=C(C)C)C(O)=C12
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -54642,7 +54629,7 @@ M  END
 CDB0488
 
 >  <Smiles>
-CCCC1=CC(=O)OC2=C1C(=C(C(=C2C(=O)C(C)CC)O)CC=C(C)C)O
+CCCC1=CC(=O)OC2=C(C(=O)[C@@H](C)CC)C(O)=C(CC=C(C)C)C(O)=C12
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -54746,7 +54733,7 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <Name>
-Mammein (Mammea  B/Ba) (Ferruol  B)
+Mammein (Mammea B/Ba) (Ferruol B)
 
 >  <PubChem ID>
 5489487
@@ -54985,7 +54972,7 @@ M  V30 END COLLECTION
 M  V30 END CTAB
 M  END
 >  <Name>
-Surangin  A
+Surangin A
 
 >  <PubChem ID>
 5321563
@@ -54994,7 +54981,7 @@ Surangin  A
 CDB0491
 
 >  <Smiles>
-CCCC1=CC(=O)OC2=C1C(=C(C(=C2C(=O)C(C)CC)O)CC=C(C)CCC=C(C)C)O
+CCCC1=CC(=O)OC2=C(C(=O)[C@@H](C)CC)C(O)=C(CC=C(C)CCC=C(C)C)C(O)=C12
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -55101,7 +55088,7 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <Name>
-(Mab 4)Mammeab/Ab Cyclo  F
+(Mab 4)Mammeab/Ab Cyclo F
 
 >  <PubChem ID>
 131751071
@@ -55220,7 +55207,7 @@ M  V30 END COLLECTION
 M  V30 END CTAB
 M  END
 >  <Name>
-(Furomammea  G) Mammea  B/Aa Cyclo F
+(Furomammea G) Mammea B/Aa Cyclo F
 
 >  <PubChem ID>
 90472431
@@ -56882,7 +56869,7 @@ Mammea C/Ab Cyclo D
 CDB0507
 
 >  <Smiles>
-CCCCCC1=CC(=O)OC2=C3C=CC(OC3=C(C(=C12)O)C(=O)C(C)CC)(C)C
+CCCCCC1=CC(=O)OC2=C3C=CC(C)(C)OC3=C(C(=O)[C@@H](C)CC)C(O)=C12
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -57351,7 +57338,7 @@ Mab 1
 CDB0511
 
 >  <Smiles>
-CCC(C)C(=O)C1=C(C2=C(C(=C1O)CC=C(C)C)OC(=O)C=C2C3=CC=CC=C3)O
+CC[C@H](C)C(=O)C1=C(O)C(CC=C(C)C)=C2OC(=O)C=C(C3=CC=CC=C3)C2=C1O
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -57596,7 +57583,7 @@ Isoracemosol
 CDB0513
 
 >  <Smiles>
-CCCC(=O)C1=C(C(=C(C2=C1OC(=O)C=C2C3=CC=CC=C3)O)CC(C(=C)C)O)O
+C=C(C)[C@@H](O)CC1=C(O)C(C(=O)CCC)=C2OC(=O)C=C(C3=CC=CC=C3)C2=C1O
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -57843,7 +57830,7 @@ Isodisparinol A
 CDB0515
 
 >  <Smiles>
-CC(C)CC(=O)C1=C(C(=C(C2=C1OC(=O)C=C2C3=CC=CC=C3)O)CC(C(=C)C)O)O
+C=C(C)[C@@H](O)CC1=C(O)C(C(=O)CC(C)C)=C2OC(=O)C=C(C3=CC=CC=C3)C2=C1O
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -57968,7 +57955,7 @@ Disparinol A
 CDB0516
 
 >  <Smiles>
-CC(C)CC(=O)C1=C(C2=C(C(=C1O)CC(C(=C)C)O)OC(=O)C=C2C3=CC=CC=C3)O
+C=C(C)[C@@H](O)CC1=C2OC(=O)C=C(C3=CC=CC=C3)C2=C(O)C(C(=O)CC(C)C)=C1O
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -58691,7 +58678,7 @@ Hydroxymammeigin
 CDB0522
 
 >  <Smiles>
-CC(CC(=O)C1=C2C(=C3C(=C1O)C(=CC(=O)O3)C4=CC=CC=C4)C=CC(O2)(C)C)CO
+C[C@H](CO)CC(=O)C1=C2OC(C)(C)C=CC2=C2OC(=O)C=C(C3=CC=CC=C3)C2=C1O
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -59190,7 +59177,7 @@ Ponnalide
 CDB0526
 
 >  <Smiles>
-CCC(C)C(=O)C1=C2C(=C3C(=C1O)C=CC(O3)(C)C)C(=CC(=O)O2)C4=CC=CC=C4
+CC[C@H](C)C(=O)C1=C2OC(=O)C=C(C3=CC=CC=C3)C2=C2OC(C)(C)C=CC2=C1O
 
 >  <Chemical class>
 5,7-Dioxygenated Coumarins
@@ -61208,7 +61195,7 @@ Virgatenol
 CDB0544
 
 >  <Smiles>
-CC(=C)C(COC1=C(C=C2C=CC(=O)OC2=C1)OC)O
+C=C(C)[C@@H](O)COC1=C(OC)C=C2C=CC(=O)OC2=C1
 
 >  <Chemical class>
 6,7-Dioxygenated Coumarins
@@ -61312,14 +61299,13 @@ Obtusinin
 CDB0545
 
 >  <Smiles>
-CC(C)(C(COC1=C(C=C2C=CC(=O)OC2=C1)OC)O)O
+COC1=C(OC[C@H](O)C(C)(C)O)C=C2OC(=O)C=CC2=C1
 
 >  <Chemical class>
 6,7-Dioxygenated Coumarins
 
 >  <Natural source>
-Conyza obscura
-Haplophyllum obtusifolium
+Conyza obscura, Haplophyllum obtusifolium
 
 >  <Molecular Formula>
 C15H18O6
@@ -61778,8 +61764,7 @@ COC1=C(C=C2C(=C1)C=CC(=O)O2)OC3C(C(C(C(O3)COC4C(C(CO4)(CO)O)O)O)O)O
 6,7-Dioxygenated Coumarins
 
 >  <Natural source>
-Hymenodictyon excelsum
-Xeromphis spinosa
+Hymenodictyon excelsum, Xeromphis spinosa
 
 >  <Molecular Formula>
 C21H26O13
@@ -65830,7 +65815,7 @@ Lamellarin A
 CDB0585
 
 >  <Smiles>
-COC1=C(C=C2C(=C1)C3=C(C(=O)O2)N4C(CC5=C(C(=C(C=C5C4=C3C6=CC(=C(C=C6)O)O)OC)OC)OC)O)O
+COC1=CC2=C(C[C@H](O)N3C4=C(C5=CC(OC)=C(O)C=C5OC4=O)C(C4=CC(O)=C(O)C=C4)=C23)C(OC)=C1OC
 
 >  <Chemical class>
 6,7-Dioxygenated Coumarins
@@ -66408,7 +66393,7 @@ Armin
 CDB0591
 
 >  <Smiles>
-CC(CCOC1=C(C2=C(C=C1)C=CC(=O)O2)O)CO
+C[C@H](CO)CCOC1=C(O)C2=C(C=CC(=O)O2)C=C1
 
 >  <Chemical class>
 7,8-Dioxygenated Coumarins
@@ -66521,8 +66506,7 @@ CC(=CCCC(=CCOC1=C(C2=C(C=C1)C=CC(=O)O2)OC)C)C
 7,8-Dioxygenated Coumarins
 
 >  <Natural source>
-Flindersia collina
-Zanthoxylum schinifolium
+Flindersia collina, Zanthoxylum schinifolium
 
 >  <Molecular Formula>
 C20H24O4
@@ -66628,7 +66612,7 @@ Schininallylol
 CDB0593
 
 >  <Smiles>
-CC(=C)C(CCC(=CCOC1=C(C2=C(C=C1)C=CC(=O)O2)OC)C)O
+C=C(C)[C@@H](O)CCC(C)=CCOC1=C(OC)C2=C(C=CC(=O)O2)C=C1
 
 >  <Chemical class>
 7,8-Dioxygenated Coumarins
@@ -66850,7 +66834,7 @@ Epoxycollinin
 CDB0595
 
 >  <Smiles>
-CC(=CCOC1=C(C2=C(C=C1)C=CC(=O)O2)OC)CCC3C(O3)(C)C
+COC1=C(OCC=C(C)CC[C@@H]2OC2(C)C)C=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7,8-Dioxygenated Coumarins
@@ -66964,7 +66948,7 @@ Schinindiol
 CDB0596
 
 >  <Smiles>
-CC(=CCOC1=C(C2=C(C=C1)C=CC(=O)O2)OC)CCC(C(C)(C)O)O
+COC1=C(OCC=C(C)CC[C@H](O)C(C)(C)O)C=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7,8-Dioxygenated Coumarins
@@ -67191,7 +67175,7 @@ Clauslactone-K
 CDB0598
 
 >  <Smiles>
-CC1=CC(OC1=O)CC(=CCOC2=C(C3=C(C=C2)C=CC(=O)O3)OC)C
+COC1=C(OCC=C(C)C[C@H]2C=C(C)C(=O)O2)C=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7,8-Dioxygenated Coumarins
@@ -67961,8 +67945,7 @@ CC(=C)C1CC2=C(O1)C(=C3C(=C2)C=CC(=O)O3)OC4C(C(C(C(O4)CO)O)O)O
 7,8-Dioxygenated Coumarins
 
 >  <Natural source>
-Apium graveolens
-Apium leptophyllum
+Apium graveolens, Apium leptophyllum
 
 >  <Molecular Formula>
 C20H22O9
@@ -68285,8 +68268,7 @@ CC(C)(C1CC2=C(O1)C(=C3C(=C2)C=CC(=O)O3)OC4C(C(C(C(O4)CO)O)O)O)O
 7,8-Dioxygenated Coumarins
 
 >  <Natural source>
-Ruta graveolens
-Seseli campestre
+Ruta graveolens, Seseli campestre
 
 >  <Molecular Formula>
 C20H24O10
@@ -68407,8 +68389,7 @@ CC(C)(C1CC2=C(O1)C(=C3C(=C2)C=CC(=O)O3)O)OC4C(C(C(C(O4)CO)O)O)O
 7,8-Dioxygenated Coumarins
 
 >  <Natural source>
-Ruta graveolens
-Apium leptophyllum
+Ruta graveolens, Apium leptophyllum
 
 >  <Molecular Formula>
 C20H24O10
@@ -68734,8 +68715,7 @@ COC1=C2C(=CC3=C1OC=C3)C=CC(=O)O2
 7,8-Dioxygenated Coumarins
 
 >  <Natural source>
-Xanthoxylum senegalense
-Ammi majus
+Xanthoxylum senegalense, Ammi majus
 
 >  <Molecular Formula>
 C12H8O4
@@ -68835,10 +68815,7 @@ CC(=CCOC1=C2C(=CC3=C1OC=C3)C=CC(=O)O2)C
 7,8-Dioxygenated Coumarins
 
 >  <Natural source>
-Imperatoria ostruthium
-Aegle marmelos
-Ammi majus
-Aegle marmelos
+Imperatoria ostruthium, Aegle marmelos, Ammi majus, Aegle marmelos
 
 >  <Molecular Formula>
 C16H14O4
@@ -68937,14 +68914,13 @@ Isogosferol
 CDB0614
 
 >  <Smiles>
-CC(=C)C(COC1=C2C(=CC3=C1OC=C3)C=CC(=O)O2)O
+C=C(C)[C@@H](O)COC1=C2OC=CC2=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7,8-Dioxygenated Coumarins
 
 >  <Natural source>
-Prangos lophoptera
-Heracleum granatense
+Prangos lophoptera, Heracleum granatense
 
 >  <Molecular Formula>
 C16H14O5
@@ -69044,14 +69020,13 @@ Prangenin
 CDB0615
 
 >  <Smiles>
-CC1(C(O1)COC2=C3C(=CC4=C2OC=C4)C=CC(=O)O3)C
+CC1(C)O[C@H]1COC1=C2OC=CC2=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7,8-Dioxygenated Coumarins
 
 >  <Natural source>
-Prangos pabularia
-Phebalium drummondii
+Prangos pabularia, Phebalium drummondii
 
 >  <Molecular Formula>
 C16H14O5
@@ -69152,7 +69127,7 @@ M  END
 CDB0616
 
 >  <Smiles>
-CC(C)(C(COC1=C2C(=CC3=C1OC=C3)C=CC(=O)O2)O)O
+CC(C)(O)[C@@H](O)COC1=C2OC=CC2=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7,8-Dioxygenated Coumarins
@@ -69767,7 +69742,7 @@ Tomasin
 CDB0620
 
 >  <Smiles>
-CC=C(C)C(=O)OC(C)(C)C(COC1=C2C(=CC3=C1OC=C3)C=CC(=O)O2)O
+CC=C(C)C(=O)OC(C)(C)[C@@H](O)COC1=C2OC=CC2=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7,8-Dioxygenated Coumarins
@@ -69882,7 +69857,7 @@ Lansiumarin-C
 CDB0621
 
 >  <Smiles>
-CC(=C)C(CCC(=CCOC1=C2C(=CC3=C1OC=C3)C=CC(=O)O2)C)O
+C=C(C)[C@@H](O)CCC(C)=CCOC1=C2OC=CC2=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 7,8-Dioxygenated Coumarins
@@ -70226,7 +70201,7 @@ Indicolactone (Wampetin)
 CDB0624
 
 >  <Smiles>
-CC1=CC(OC1=O)CC(=CCOC2=C3C(=CC4=C2OC=C4)C=CC(=O)O3)C
+CC(=CCOC1=C2OC=CC2=CC2=C1OC(=O)C=C2)C[C@H]1C=C(C)C(=O)O1
 
 >  <Chemical class>
 7,8-Dioxygenated Coumarins
@@ -70976,8 +70951,7 @@ CC(=CCC1=C2C=CC(=O)OC2=C(C3=C1C=CO3)O)C
 7,8-Dioxygenated Coumarins
 
 >  <Natural source>
-Aegle marmelos
-Prangos ornata
+Aegle marmelos, Prangos ornata
 
 >  <Molecular Formula>
 C16H14O4
@@ -71317,7 +71291,7 @@ Sagecoumarin
 CDB0634
 
 >  <Smiles>
-C1=CC(=C(C=C1CC(C(=O)O)OC(=O)C=CC2=CC(=C(C=C2)OC3=CC4=CC(=C(C=C4OC3=O)O)O)O)O)O
+O=C(C=CC1=CC(O)=C(OC2=CC3=C(C=C(O)C(O)=C3)OC2=O)C=C1)O[C@@H](CC1=CC(O)=C(O)C=C1)C(=O)O
 
 >  <Chemical class>
 3,6,7-Trioxygenated Coumarins
@@ -71968,8 +71942,7 @@ CC1(CCC2=C(O1)C=C3C(=C2OC)C4=C(C5=C(O4)C=C(C=C5)O)C(=O)O3)C
 4,5,7-Trioxygenated Coumarins
 
 >  <Natural source>
-Glycyrrhiza sp.
-Glycyrrhiza uralensis
+Glycyrrhiza sp., Glycyrrhiza uralensis
 
 >  <Molecular Formula>
 C21H18O6
@@ -73935,14 +73908,13 @@ Sabandinol
 CDB0658
 
 >  <Smiles>
-CC(C)(C(COC1=C2C=CC(=O)OC2=CC3=C1OCO3)O)O
+CC(C)(O)[C@@H](O)COC1=C2C=CC(=O)OC2=CC2=C1OCO2
 
 >  <Chemical class>
 5,6,7-Trioxygenated Coumarins
 
 >  <Natural source>
-Ruta pinnata
-Pterocaulon balansae
+Ruta pinnata, Pterocaulon balansae
 
 >  <Molecular Formula>
 C15H16O7
@@ -74281,7 +74253,7 @@ Murragleinin
 CDB0661
 
 >  <Smiles>
-CC(C)(C(CC1=C(C(=C(C2=C1OC(=O)C=C2)OC)OC)OC)O)O
+COC1=C2C=CC(=O)OC2=C(C[C@H](O)C(C)(C)O)C(OC)=C1OC
 
 >  <Chemical class>
 5,6,7-Trioxygenated Coumarins
@@ -74488,7 +74460,7 @@ Heraclesol
 CDB0663
 
 >  <Smiles>
-CC(C)(C(COC1=C(C2=C(C3=C1OC=C3)OC(=O)C=C2)OC)O)O
+COC1=C(OC[C@H](O)C(C)(C)O)C2=C(C=CO2)C2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,6,7-Trioxygenated Coumarins
@@ -75189,7 +75161,7 @@ Heracol
 CDB0670
 
 >  <Smiles>
-CC(C)C(COC1=C2C(=C(C3=C1OC(=O)C=C3)OC)C=CO2)O
+COC1=C2C=COC2=C(OC[C@H](O)C(C)C)C2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,7,8-Trioxygenated Coumarins
@@ -75298,7 +75270,7 @@ Neobyakangelicol
 CDB0671
 
 >  <Smiles>
-CC(=C)C(COC1=C2C(=C(C3=C1OC(=O)C=C3)OC)C=CO2)O
+C=C(C)[C@@H](O)COC1=C2OC=CC2=C(OC)C2=C1OC(=O)C=C2
 
 >  <Chemical class>
 5,7,8-Trioxygenated Coumarins
@@ -75408,7 +75380,7 @@ Byakangelicol
 CDB0672
 
 >  <Smiles>
-CC1(C(O1)COC2=C3C(=C(C4=C2OC(=O)C=C4)OC)C=CO3)C
+COC1=C2C=COC2=C(OC[C@@H]2OC2(C)C)C2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,7,8-Trioxygenated Coumarins
@@ -76014,7 +75986,7 @@ Japoangelone
 CDB0677
 
 >  <Smiles>
-CC1(C(OC(=O)O1)COC2=C3C(=C(C4=C2OC(=O)C=C4)OC)C=CO3)C
+COC1=C2C=COC2=C(OC[C@@H]2OC(=O)OC2(C)C)C2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,7,8-Trioxygenated Coumarins
@@ -76439,7 +76411,7 @@ Apaensin
 CDB0681
 
 >  <Smiles>
-CC(=C)C(COC1=C2C=COC2=C(C3=C1C=CC(=O)O3)OC)O
+C=C(C)[C@@H](O)COC1=C2C=COC2=C(OC)C2=C1C=CC(=O)O2
 
 >  <Chemical class>
 5,7,8-Trioxygenated Coumarins
@@ -76665,8 +76637,7 @@ CC1(C=CC2=C(C3=C(C(=C2O1)OC)OC(=O)C=C3)OC)C
 5,7,8-Trioxygenated Coumarins
 
 >  <Natural source>
-Atalantia racemosa
-Atalantia ceylanica
+Atalantia racemosa, Atalantia ceylanica
 
 >  <Molecular Formula>
 C16H16O5
@@ -76958,9 +76929,7 @@ COC1=C(C(=C2C(=C1)C=CC(=O)O2)OC3C(C(C(C(O3)CO)O)O)O)O
 6,7,8-Trioxygenated Coumarins
 
 >  <Natural source>
-Fraxinus excelsior
-Aesculus pavia
-Fraxinus angustifolia
+Fraxinus excelsior, Aesculus pavia, Fraxinus angustifolia
 
 >  <Molecular Formula>
 C16H18O10
@@ -77278,8 +77247,7 @@ CC(=O)N1C2C(CC3N2C(=O)C(NC3=O)CC4=CC=CC=C4)(C5=CC=CC=C51)C(C)(C)C=C
 6,7,8-Trioxygenated Coumarins
 
 >  <Natural source>
-Pteronia ciliata
-Agathosma puberula
+Pteronia ciliata, Agathosma puberula
 
 >  <Molecular Formula>
 C27H29N3O3
@@ -77521,7 +77489,7 @@ Epoxyfarnochrol
 CDB0691
 
 >  <Smiles>
-CC(=CCCC(=CCOC1=C(C=C2C=CC(=O)OC2=C1OC)OC)C)CCC3C(O3)(C)C
+COC1=C(OCC=C(C)CCC=C(C)CC[C@@H]2OC2(C)C)C(OC)=C2OC(=O)C=CC2=C1
 
 >  <Chemical class>
 6,7,8-Trioxygenated Coumarins
@@ -78713,14 +78681,13 @@ M  END
 CDB0701
 
 >  <Smiles>
-CC(C)(C1COC2=C(C=C3C=CC(=O)OC3=C2O1)OC)O
+COC1=C2OC[C@@H](C(C)(C)O)OC2=C2OC(=O)C=CC2=C1
 
 >  <Chemical class>
 6,7,8-Trioxygenated Coumarins
 
 >  <Natural source>
-Haplophyllum obtusifolium
-Pterocaulon purpurascens
+Haplophyllum obtusifolium, Pterocaulon purpurascens
 
 >  <Molecular Formula>
 C15H16O6
@@ -79075,8 +79042,7 @@ COC1=C(C=CC(=C1)C2C(OC3=C4C(=CC(=C3O2)OC)C=CC(=O)O4)CO)O
 6,7,8-Trioxygenated Coumarins
 
 >  <Natural source>
-Cleome icosandra
-Cleome viscosa
+Cleome icosandra, Cleome viscosa
 
 >  <Molecular Formula>
 C20H18O8
@@ -79197,8 +79163,7 @@ COC1=CC(=CC(=C1O)OC)C2C(OC3=C4C(=CC(=C3O2)OC)C=CC(=O)O4)CO
 6,7,8-Trioxygenated Coumarins
 
 >  <Natural source>
-Aquilaria agallocha
-Cleome viscosa
+Aquilaria agallocha, Cleome viscosa
 
 >  <Molecular Formula>
 C21H20O9
@@ -79424,8 +79389,7 @@ COC1=C(C(=C2C(=C1)C=CC(=O)O2)O)OC3C(C(C(C(O3)CO)O)O)O
 6,7,8-Trioxygenated Coumarins
 
 >  <Natural source>
-Poliothyris sinensis
-Haplophyllum obtusifolium
+Poliothyris sinensis, Haplophyllum obtusifolium
 
 >  <Molecular Formula>
 C16H18O10
@@ -80594,7 +80558,7 @@ Purpurasolol
 CDB0718
 
 >  <Smiles>
-CC(C)(C1COC2=C(C(=C3C=CC(=O)OC3=C2O1)O)OC)O
+COC1=C2OC[C@@H](C(C)(C)O)OC2=C2OC(=O)C=CC2=C1O
 
 >  <Chemical class>
 5,6,7,8-Tetraoxygenated Coumarins
@@ -80700,8 +80664,7 @@ CC1C2C(CC(=C3C(C2OC1=O)C(=C(C3=O)O)C)C)O
 Biscoumarins
 
 >  <Natural source>
-Artemisia tridentata ssp. vaseyana
-Sapium sebiferum
+Artemisia tridentata ssp. vaseyana, Sapium sebiferum
 
 >  <Molecular Formula>
 C15H18O5
@@ -80804,13 +80767,13 @@ Purpurenol
 CDB0720
 
 >  <Smiles>
-CC(C)(C1COC2=C(O1)C3=C(C=CC(=O)O3)C(=C2OC)OC)O
+COC1=C2C=CC(=O)OC2=C2O[C@H](C(C)(C)O)COC2=C1OC
 
 >  <Chemical class>
 Biscoumarins
 
 >  <Natural source>
-Pterocaulon purpurascens 
+Pterocaulon purpurascens
 
 >  <Molecular Formula>
 C16H18O7
@@ -83359,8 +83322,7 @@ COC1=C(C=C2C(=C1)C=C(C(=O)O2)OC3=CC4=C(C=C3)C=CC(=O)O4)OC
 Biscoumarins
 
 >  <Natural source>
-Ruta graveolens
-Stellera chamaejasme
+Ruta graveolens, Stellera chamaejasme
 
 >  <Molecular Formula>
 C20H14O7
@@ -83496,8 +83458,7 @@ COC1=C(C=C2C(=C1)C=C(C(=O)O2)OC3=CC4=C(C=C3)C=CC(=O)O4)OC5C(C(C(C(O5)CO)O)O)O
 Biscoumarins
 
 >  <Natural source>
-Daphne mezereum
-Stellera chamaejasme 
+Daphne mezereum, Stellera chamaejasme
 
 >  <Molecular Formula>
 C25H22O12
@@ -84833,7 +84794,7 @@ Bisnorponcitrin
 CDB0752
 
 >  <Smiles>
-CC1(CC(C2=C(O1)C(=C3C(=C2O)C=CC(=O)O3)C(C)(C)C=C)C4=CC5=C(C6=C(C(=C5OC4=O)C(C)(C)C=C)OC(C=C6)(C)C)O)C
+C=CC(C)(C)C1=C2OC(=O)C([C@@H]3CC(C)(C)OC4=C3C(O)=C3C=CC(=O)OC3=C4C(C)(C)C=C)=CC2=C(O)C2=C1OC(C)(C)C=C2
 
 >  <Chemical class>
 Biscoumarins
@@ -84981,7 +84942,7 @@ Nordenletin
 CDB0753
 
 >  <Smiles>
-CC1(CC(C2=C(O1)C(=C3C(=C2O)C=CC(=O)O3)C(C)(C)C=C)C4=C5C(=C(C6=C4OC(C=C6)(C)C)O)C=CC(=O)O5)C
+C=CC(C)(C)C1=C2OC(=O)C=CC2=C(O)C2=C1OC(C)(C)C[C@@H]2C1=C2OC(=O)C=CC2=C(O)C2=C1OC(C)(C)C=C2
 
 >  <Chemical class>
 Biscoumarins
@@ -85417,8 +85378,7 @@ CC1=CC(C(CC1)(C)C=CC2=C(C=C3C(=C2)C=CC(=O)O3)OC)C4=C(C=C5C(=C4)C=CC(=O)O5)OC
 Biscoumarins
 
 >  <Natural source>
-Thamnosma montana
-Zanthoxylum suberosum
+Thamnosma montana, Zanthoxylum suberosum
 
 >  <Molecular Formula>
 C30H28O6
@@ -86161,7 +86121,7 @@ Ferulenoloxyferulenol
 CDB0761
 
 >  <Smiles>
-CC(=CCCC(=CC(CC(=CCC1=C(C2=CC=CC=C2OC1=O)O)C)OCC(=CCCC(=CCCC(=CCC3=C(C4=CC=CC=C4OC3=O)O)C)C)C)C)C
+CC(C)=CCCC(C)=C[C@H](CC(C)=CCC1=C(O)C2=CC=CC=C2OC1=O)OCC(C)=CCCC(C)=CCCC(C)=CCC1=C(O)C2=CC=CC=C2OC1=O
 
 >  <Chemical class>
 Biscoumarins
@@ -86311,7 +86271,7 @@ Candicanin
 CDB0762
 
 >  <Smiles>
-CC(=CCOC1=C2C(=CC3=C1OC=C3)C=CC(=O)O2)COC(C)(C)C(COC4=C5C(=CC6=C4OC=C6)C=CC(=O)O5)O
+CC(=CCOC1=C2OC=CC2=CC2=C1OC(=O)C=C2)COC(C)(C)[C@@H](O)COC1=C2OC=CC2=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
 Biscoumarins
@@ -87048,8 +87008,7 @@ CC1(CC2CC(OC3=C2C(=C(C4=C3C=CC(=O)O4)C(C)(C)C=C)O1)(C)C=CC5=C(C=C6C(=C5)C=CC(=O)
 Biscoumarins
 
 >  <Natural source>
-Poncirus trifoliata
-Citrus paradisi
+Poncirus trifoliata, Citrus paradisi
 
 >  <Molecular Formula>
 C33H32O7
@@ -87192,8 +87151,7 @@ CC1(CC2CC(OC3=C2C(=C(C4=C3C=CC(=O)O4)C(C)(C)C=C)O1)(C)C=CC5=C(C=C6C(=C5)C=CC(=O)
 Biscoumarins
 
 >  <Natural source>
-Poncirus trifoliata
-Citrus paradisi
+Poncirus trifoliata, Citrus paradisi
 
 >  <Molecular Formula>
 C33H32O7
@@ -87336,8 +87294,7 @@ CC1(CC2CC(OC3=C2C(=C(C4=C3C=CC(=O)O4)C(C)(C)C=C)O1)(C)C=CC5=C(C=CC6=C5OC(=O)C=C6
 Biscoumarins
 
 >  <Natural source>
-Poncirus trifoliata
-Citrus paradisi
+Poncirus trifoliata, Citrus paradisi
 
 >  <Molecular Formula>
 C33H32O7
@@ -87482,8 +87439,7 @@ CC1(CC2CC(OC3=C2C(=C(C4=C3C=CC(=O)O4)C(C)(C)C=C)O1)(C)C=CC5=C(C=CC6=C5OC(=O)C=C6
 Biscoumarins
 
 >  <Natural source>
-Poncirus trifoliata
-Citrus paradisi
+Poncirus trifoliata, Citrus paradisi
 
 >  <Molecular Formula>
 C34H34O7
@@ -88519,7 +88475,7 @@ C1=CC(=CC2=C1C=CC(=O)O2)OC3=CC4=C(C(=C(C=C4)O)C5=C(C=CC6=C5OC(=O)C=C6)O)OC3=O
 Triscoumarins
 
 >  <Natural source>
-Daphne mezereum 
+Daphne mezereum
 
 >  <Molecular Formula>
 C27H14O9
@@ -88606,7 +88562,7 @@ COC1=C(C2=C(C=C1)OC(=O)C=C2)O
 Hydroxycoumarins
 
 >  <Natural source>
-Fraxinus jioribunda 
+Fraxinus jioribunda
 
 >  <Molecular Formula>
 C10H8O4
@@ -90431,7 +90387,7 @@ Talacoumarin A
 CDB0795
 
 >  <Smiles>
-CC(CC1=CC2=CC(=CC(=C2OC1=O)O)OC)O
+COC1=CC(O)=C2OC(=O)C(C[C@H](C)O)=CC2=C1
 
 >  <Chemical class>
 Simple coumarins
@@ -90529,7 +90485,7 @@ Talacoumarin B
 CDB0796
 
 >  <Smiles>
-CC(CC1=CC2=CC(=CC(=C2OC1=O)OC)O)O
+COC1=C2OC(=O)C(C[C@H](C)O)=CC2=CC(O)=C1
 
 >  <Chemical class>
 Simple coumarins
@@ -91314,7 +91270,7 @@ Peucedanol
 CDB0804
 
 >  <Smiles>
-CC(C)(C(CC1=C(C=C2C(=C1)C=CC(=O)O2)O)O)O
+CC(C)(O)[C@@H](O)CC1=C(O)C=C2OC(=O)C=CC2=C1
 
 >  <Chemical class>
 Simple prenylated coumarins
@@ -91829,7 +91785,7 @@ M  END
 CDB0809
 
 >  <Smiles>
-CCOC(C)(C)C(CC1=C(C=C(C2=C1OC(=O)C=C2)OC)OC)O
+CCOC(C)(C)[C@@H](O)CC1=C2OC(=O)C=CC2=C(OC)C=C1OC
 
 >  <Chemical class>
 Simple prenylated coumarins
@@ -92156,7 +92112,7 @@ Meranzin Hydrate
 CDB0812
 
 >  <Smiles>
-CC(C)(C(CC1=C(C=CC2=C1OC(=O)C=C2)OC)O)O
+COC1=C(C[C@H](O)C(C)(C)O)C2=C(C=CC(=O)O2)C=C1
 
 >  <Chemical class>
 Simple prenylated coumarins
@@ -93504,7 +93460,7 @@ Murranganon
 CDB0825
 
 >  <Smiles>
-CC(C)C(=O)C(C1=C(C=CC2=C1OC(=O)C=C2)OC)O
+COC1=C([C@@H](O)C(=O)C(C)C)C2=C(C=CC(=O)O2)C=C1
 
 >  <Chemical class>
 Simple prenylated coumarins
@@ -93737,7 +93693,7 @@ Mammea C/Bb
 CDB0827
 
 >  <Smiles>
-CCCCCC1=CC(=O)OC2=C1C(=C(C(=C2C(=O)C(C)CC)O)CC=C(C)C)O
+CCCCCC1=CC(=O)OC2=C(C(=O)[C@@H](C)CC)C(O)=C(CC=C(C)C)C(O)=C12
 
 >  <Chemical class>
 Simple prenylated coumarins
@@ -93857,7 +93813,7 @@ Mammea C/Ab
 CDB0828
 
 >  <Smiles>
-CCCCCC1=CC(=O)OC2=C1C(=C(C(=C2CC=C(C)C)O)C(=O)C(C)CC)O
+CCCCCC1=CC(=O)OC2=C(CC=C(C)C)C(O)=C(C(=O)[C@@H](C)CC)C(O)=C12
 
 >  <Chemical class>
 Simple prenylated coumarins
@@ -94097,7 +94053,7 @@ Mammea A/Bb
 CDB0830
 
 >  <Smiles>
-CCC(C)C(=O)C1=C(C(=C(C2=C1OC(=O)C=C2C3=CC=CC=C3)O)CC=C(C)C)O
+CC[C@H](C)C(=O)C1=C2OC(=O)C=C(C3=CC=CC=C3)C2=C(O)C(CC=C(C)C)=C1O
 
 >  <Chemical class>
 Simple prenylated coumarins
@@ -94807,7 +94763,7 @@ Mammea E/Ba
 CDB0836
 
 >  <Smiles>
-CCC(C1=CC(=O)OC2=C1C(=C(C(=C2C(=O)CC(C)C)O)CC=C(C)C)O)OC(=O)C
+CC[C@H](OC(C)=O)C1=CC(=O)OC2=C(C(=O)CC(C)C)C(O)=C(CC=C(C)C)C(O)=C12
 
 >  <Chemical class>
 Simple prenylated coumarins
@@ -94929,7 +94885,7 @@ Mammea F/Ba
 CDB0837
 
 >  <Smiles>
-CCCCC(C1=CC(=O)OC2=C1C(=C(C(=C2C(=O)CC(C)C)O)CC=C(C)C)O)O
+CCCC[C@H](O)C1=CC(=O)OC2=C(C(=O)CC(C)C)C(O)=C(CC=C(C)C)C(O)=C12
 
 >  <Chemical class>
 Simple prenylated coumarins
@@ -95043,7 +94999,7 @@ M  END
 CDB0838
 
 >  <Smiles>
-CC(=CC(CC(=CCOC1=CC2=C(C=C1)C=CC(=O)O2)C)OC(=O)C)C
+CC(=O)O[C@H](C=C(C)C)CC(C)=CCOC1=CC2=C(C=CC(=O)O2)C=C1
 
 >  <Chemical class>
 Simple geranylated coumarins
@@ -95146,7 +95102,7 @@ CDB0839
 CC(=CCC1=C2C(=C(C3=C1OC=C3)O)C=CC(=O)O2)C
 
 >  <Chemical class>
-Simple prenlyated linear furanocoumarins
+Simple prenylated linear furanocoumarins
 
 >  <Natural source>
 Angelica dahurica
@@ -95254,10 +95210,10 @@ Byakangelicin
 CDB0840
 
 >  <Smiles>
-CC(C)(C(COC1=C2C(=C(C3=C1OC(=O)C=C3)OC)C=CO2)O)O
+COC1=C2C=COC2=C(OC[C@H](O)C(C)(C)O)C2=C1C=CC(=O)O2
 
 >  <Chemical class>
-Simple prenlyated linear furanocoumarins
+Simple prenylated linear furanocoumarins
 
 >  <Natural source>
 Angelica dahurica
@@ -95361,10 +95317,10 @@ Heraclenol
 CDB0841
 
 >  <Smiles>
-CC(C)(C(COC1=C2C(=CC3=C1OC=C3)C=CC(=O)O2)O)O
+CC(C)(O)[C@@H](O)COC1=C2OC=CC2=CC2=C1OC(=O)C=C2
 
 >  <Chemical class>
-Simple prenlyated linear furanocoumarins
+Simple prenylated linear furanocoumarins
 
 >  <Natural source>
 Angelica dahurica
@@ -95472,10 +95428,10 @@ Isobyakangelicin
 CDB0842
 
 >  <Smiles>
-CC(C)(C(COC1=C2C=COC2=C(C3=C1C=CC(=O)O3)OC)O)O
+COC1=C2OC=CC2=C(OC[C@H](O)C(C)(C)O)C2=C1OC(=O)C=C2
 
 >  <Chemical class>
-Simple prenlyated linear furanocoumarins
+Simple prenylated linear furanocoumarins
 
 >  <Natural source>
 Angelica nitida
@@ -95578,10 +95534,10 @@ Oxypeucedanin
 CDB0843
 
 >  <Smiles>
-CC1(C(O1)COC2=C3C=CC(=O)OC3=CC4=C2C=CO4)C
+CC1(C)O[C@H]1COC1=C2C=COC2=CC2=C1C=CC(=O)O2
 
 >  <Chemical class>
-Simple prenlyated linear furanocoumarins
+Simple prenylated linear furanocoumarins
 
 >  <Natural source>
 Angelica dahurica
@@ -95683,7 +95639,7 @@ CDB0844
 CC(C)C(=O)COC1=C2C(=CC3=C1OC=C3)C=CC(=O)O2
 
 >  <Chemical class>
-Simple prenlyated linear furanocoumarins
+Simple prenylated linear furanocoumarins
 
 >  <Natural source>
 Angelica dahurica
@@ -96138,7 +96094,7 @@ Clauslactone E
 CDB0848
 
 >  <Smiles>
-CC(=CCOC1=C(C2=C(C=C1)C=CC(=O)O2)O)CC3CC(=C)C(=O)O3
+C=C1C[C@H](CC(C)=CCOC2=C(O)C3=C(C=CC(=O)O3)C=C2)OC1=O
 
 >  <Chemical class>
 Geranylated linear furanocoumarins
@@ -96590,7 +96546,7 @@ Indicolactone
 CDB0852
 
 >  <Smiles>
-CC1=CC(OC1=O)CC(=CCOC2=C3C(=CC4=C2OC=C4)C=CC(=O)O3)C
+CC(=CCOC1=C2OC=CC2=CC2=C1OC(=O)C=C2)C[C@H]1C=C(C)C(=O)O1
 
 >  <Chemical class>
 Geranylated linear furanocoumarins
@@ -96716,7 +96672,7 @@ Ochrocarpin A
 CDB0853
 
 >  <Smiles>
-CCC(C)C(=O)C1=C2C(=C3C(=C1O)C(=CC(=O)O3)C4=CC=CC=C4)C=C(O2)C(C)(C)O
+CC[C@H](C)C(=O)C1=C2OC(C(C)(C)O)=CC2=C2OC(=O)C=C(C3=CC=CC=C3)C2=C1O
 
 >  <Chemical class>
 Geranylated linear furanocoumarins
@@ -97088,7 +97044,7 @@ Ochrocarpin D
 CDB0856
 
 >  <Smiles>
-CCC(C)C(=O)C1=C2C(=C3C(=C1O)C(=CC(=O)O3)C4=CC=CC=C4)C=C(O2)C(C)(C)OC
+CC[C@H](C)C(=O)C1=C2OC(C(C)(C)OC)=CC2=C2OC(=O)C=C(C3=CC=CC=C3)C2=C1O
 
 >  <Chemical class>
 Geranylated linear furanocoumarins
@@ -99486,7 +99442,7 @@ Licopyranocoumarin
 CDB0877
 
 >  <Smiles>
-CC1(CCC2=C(O1)C=C3C(=C2OC)C=C(C(=O)O3)C4=C(C=C(C=C4)O)O)CO
+COC1=C2CC[C@](C)(CO)OC2=CC2=C1C=C(C1=C(O)C=C(O)C=C1)C(=O)O2
 
 >  <Chemical class>
 Linear dihydropyranocoumarins
