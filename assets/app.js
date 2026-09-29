@@ -441,6 +441,7 @@
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "btn btn-small";
+    btn.setAttribute("aria-live", "polite");
     btn.textContent = label;
     btn.addEventListener("click", () => {
       copyText(value).then(
