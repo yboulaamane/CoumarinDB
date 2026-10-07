@@ -442,6 +442,7 @@
     btn.type = "button";
     btn.className = "btn btn-small";
     btn.textContent = label;
+    btn.setAttribute("aria-live", "polite");
     btn.addEventListener("click", () => {
       copyText(value).then(
         () => flash(btn, "Copied"),
