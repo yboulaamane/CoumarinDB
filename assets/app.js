@@ -694,6 +694,18 @@
     };
 
     el.search.addEventListener("input", debounce(() => update(() => { state.q = el.search.value.trim(); }), 150));
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "/" && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        if (["INPUT", "SELECT", "TEXTAREA"].includes(document.activeElement.tagName)) return;
+        if (el.dialog.open) return;
+        e.preventDefault();
+        el.search.focus();
+        // Move cursor to the end if there's text
+        const len = el.search.value.length;
+        el.search.setSelectionRange(len, len);
+      }
+    });
     el.cls.addEventListener("change", () => update(() => { state.cls = el.cls.value; }));
     el.ranges.addEventListener("input", debounce((e) => {
       const input = e.target;
